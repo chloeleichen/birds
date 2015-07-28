@@ -1,0 +1,26 @@
+{
+  "name": "countryFinder",
+  "version": "1.0.0",
+  "description": "a reactjs app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chloeleichen/countryFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chloeleichen/countryFinder/issues"
+  },
+  "homepage": "https://github.com/chloeleichen/countryFinder",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-react": "^3.0.1",
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.3.1"
+  }
+}
