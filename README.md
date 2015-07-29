@@ -1,6 +1,6 @@
 #Endangered birds in NSW
 
-##Attributes
+##Image Attributes(in progress)
 
 Eastern Bristlebird (Dasyornis brachypterus)
 [David Cook](https://www.flickr.com/photos/kookr/): https://flic.kr/p/ckjKfo
