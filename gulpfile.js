@@ -7,8 +7,9 @@ var gulp  = require('gulp'),
 
 var path = {
   BUILD: 'build',
-  SRC: 'src/styles.scss',
-  JS: 'src/script.jsx'
+  SASS: 'src/sass/',
+  SRC: 'src/sass/styles.scss',
+  JS: 'src/js/script.jsx'
 };
 
 
@@ -20,13 +21,13 @@ gulp.task('transform', function(){
 
 
 gulp.task('sass', function(){
-  return sass(path.SRC, { style: 'expanded' })
+  return sass(path.SRC, { style: 'expanded', loadPath: path.SASS })
     .pipe(gulp.dest(path.BUILD));
 });
 
 gulp.task('watch', function(){
   gulp.watch(path.JS, ['transform']);
-  gulp.watch(path.SRC, ['sass']);
+  gulp.watch(path.SASS +'*.scss', ['sass']);
 });
 
 gulp.task('default', ['watch']);
