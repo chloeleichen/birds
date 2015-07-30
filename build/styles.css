@@ -1,6 +1,23 @@
 .bird-wrapper {
   backgroud: yellow;
 }
+.bird-wrapper figure {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+.bird-wrapper img {
+  width: 100%;
+  height: auto;
+}
+.bird-wrapper figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
 
 body {
   backgroud: red;

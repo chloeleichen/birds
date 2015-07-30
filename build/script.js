@@ -16,7 +16,7 @@
 
     render: function(){
       return( 
-            React.createElement("ul", {className: "list-reset all-birds-wrapper "}, 
+            React.createElement("ul", {className: "clearfix list-reset all-birds-wrapper "}, 
             this.state.data.map(function(bird) {
                 return React.createElement(BirdWrapper, {key: bird.id, data: bird});
                 })
@@ -27,7 +27,13 @@
 
   var BirdWrapper = React.createClass({displayName: "BirdWrapper",
     render: function() {
-      return React.createElement("li", {className: "block bird-wrapper col col-12 sm-col-6 md-col-4 lg-col-3"}, this.props.data.commonName);
+      return (React.createElement("li", {className: "block bird-wrapper p1 col col-12 sm-col-4 md-col-3 lg-col-3"}, 
+          React.createElement("figure", null, 
+          React.createElement("img", {src: "http://placehold.it/350x350", alt: this.props.data.commonName}), 
+          React.createElement("figcaption", null, this.props.data.commonName)
+          )
+        )
+      );
     }
   });
 

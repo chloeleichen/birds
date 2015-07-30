@@ -16,7 +16,7 @@
 
     render: function(){
       return( 
-            <ul className="list-reset all-birds-wrapper ">
+            <ul className="clearfix list-reset all-birds-wrapper ">
             {this.state.data.map(function(bird) {
                 return <BirdWrapper key={bird.id} data={bird}/>;
                 })}
@@ -27,7 +27,13 @@
 
   var BirdWrapper = React.createClass({
     render: function() {
-      return <li className="block bird-wrapper col col-12 sm-col-6 md-col-4 lg-col-3">{this.props.data.commonName}</li>;
+      return (<li className="block bird-wrapper p1 col col-12 sm-col-4 md-col-3 lg-col-3">
+          <figure>
+          <img src="http://placehold.it/350x350" alt={this.props.data.commonName}/>
+          <figcaption>{this.props.data.commonName}</figcaption>
+          </figure>
+        </li>
+      );
     }
   });
 
