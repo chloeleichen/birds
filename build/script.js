@@ -25,16 +25,16 @@
     },
 
     render: function(){
+      //Get Active Bird
+      var activeBird = this.state.data[this.state.activeBirdId];
       return( 
             React.createElement("div", null, 
               React.createElement("ul", {className: "clearfix list-reset all-birds-wrapper "}, 
                   this.state.data.map(function(bird, i) {
-                  return (React.createElement(BirdWrapper, {onClick: this.handleClick.bind(this, i), key: i, index: i, data: bird, active: this.state.activeBirdId}));
-                  }, this), 
-                  "//Get active bird", 
-                  console.log(this.state.data[this.state.activeBirdId])
+                  return (React.createElement(BirdWrapper, {onClick: this.handleClick.bind(this, i), key: i, active: i === this.state.activeBirdId ? 'active' : '', data: bird}));
+                  }, this)
               ), 
-              React.createElement(BirdInfo, null)
+              React.createElement(BirdInfo, {data: activeBird})
             )
           );
       }
@@ -51,10 +51,7 @@
     },
 
     render: function() {
-      if(this.props.index === this.props.active){
-          var active = true;
-      };
-      var listItemClassList = active === true? "active":"" + "block bird-wrapper p1 col col-12 sm-col-4 md-col-3 lg-col-3";
+      var listItemClassList = this.props.active + " block bird-wrapper p1 col col-12 sm-col-4 md-col-3 lg-col-3";
       return (
         React.createElement("li", {onClick: this.handleClick, className: listItemClassList}, 
           React.createElement("figure", null, 
@@ -67,29 +64,40 @@
   });
 
   var BirdInfo = React.createClass({displayName: "BirdInfo",
+
     render: function(){
-      return(
+      if(this.props.data){
+        console.log(this.props.data.threats);
+        return(
         React.createElement("div", null, 
-        React.createElement(BirdTitle, null), 
-        React.createElement(BirdStats, null), 
-        React.createElement(BirdDescription, null), 
-        React.createElement(BirdThreats, null), 
-        React.createElement(BirdRecovery, null), 
-        React.createElement("div", {className: "more info"}, " more info ")
+        React.createElement(BirdTitle, {comName: this.props.data.commonName, sciName: this.props.data.scientificName}), 
+        React.createElement(BirdStats, {stats: this.props.data.stats, statsFor: this.props.data.statsFor}), 
+        React.createElement(BirdDescription, {description: this.props.data.description}), 
+        React.createElement(BirdThreats, {threats: this.props.data.threats}), 
+        React.createElement(BirdRecovery, {recoveries: this.props.data.recoveries}), 
+        React.createElement("div", {className: "more info"}, " ", React.createElement("a", {href: this.props.data.profile}, "more info"), " ")
         )
-      );
+        );
+      } else{
+        return React.createElement("div", null);
+      }
+      
     }
   });
 
   var BirdTitle = React.createClass({displayName: "BirdTitle",
     render: function(){
-      return React.createElement("div", {className: "title"}, "Title") ;
+      return (React.createElement("div", {className: "title"}, 
+        React.createElement("h4", null, this.props.sciName), 
+        React.createElement("h1", null, this.props.comName)
+        )
+        ) ;
     }
   });
 
   var BirdDescription = React.createClass({displayName: "BirdDescription",
     render: function(){
-      return React.createElement("div", {className: "description"}, "Description") ;
+      return React.createElement("div", {className: "description"}, this.props.description) ;
     }
   });
 
@@ -101,19 +109,39 @@
 
   var BirdStats = React.createClass({displayName: "BirdStats",
     render: function(){
-      return React.createElement("div", {className: "stats"}, " stats ")
+      return (React.createElement("div", {className: "stats"}, 
+             React.createElement("h2", null, this.props.stats), 
+             React.createElement("span", null, " in ", this.props.statsFor, " ")
+             )
+        );
     }
   });
 
   var BirdThreats = React.createClass({displayName: "BirdThreats",
     render: function(){
-      return React.createElement("div", {className: "threats"}, " threats ");
+      var threats = this.props.threats;
+      return (React.createElement("ul", {className: "threats"}, 
+              threats.map(function(threat) {
+                for(var key in threat){
+                  return React.createElement("li", {key: key}, " ", key, " : ", threat[key]);
+                } 
+              })
+              )
+          );
     }
   });
 
   var BirdRecovery = React.createClass({displayName: "BirdRecovery",
     render: function(){
-      return React.createElement("div", {className: "recovery"}, " recovery ");
+      var recoveries = this.props.recoveries;
+      return (React.createElement("ul", {className: "recoveries"}, 
+              recoveries.map(function(recovery) {
+                for(var key in recovery){
+                  return React.createElement("li", {key: key}, " ", key, " : ", recovery[key]);
+                } 
+              })
+              )
+          );
     }
   });
 

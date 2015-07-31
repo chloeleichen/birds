@@ -1,5 +1,8 @@
 .bird-wrapper{
-  backgroud: yellow;
+
+  &.active{
+    color: red;
+  }
 
   figure{
     position: relative;
@@ -23,6 +26,3 @@
   }
 }
 
-body{
-  backgroud: red;
-}
