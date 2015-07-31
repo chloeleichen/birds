@@ -120,14 +120,8 @@
   var BirdThreats = React.createClass({
     render: function(){
       var threats = this.props.threats;
-      return (<ul className='threats'>
-              {threats.map(function(threat) {
-                for(var key in threat){
-                  return <li key={key}> {key} : {threat[key]}</li>;
-                } 
-              })}
-              </ul>
-          );
+      console.log(threats);
+      return <div> </div>;
     }
   });
 
@@ -144,8 +138,17 @@
           );
     }
   });
+  // var LineChart = require("react-chartjs").Line;
+  // var MyComponent = React.createClass({
+
+  // render: function() {
+  //   var arr = [1, 2, 3];
+  //   return <LineChart data={arr}/>
+  //   }
+  // });
 
   React.render(<AllBirdsWrapper />, document.getElementById('content'));
+  //React.render(<MyComponent />, document.getElementById('content'));
 
  }());
 
