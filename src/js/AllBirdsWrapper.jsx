@@ -42,12 +42,15 @@
       return( 
             <div>
             {outputHero}
+            <div className="container">
               <ul className="p2 clearfix list-reset all-birds-wrapper ">
                   {this.state.data.map(function(bird, i) {
                   return (<BirdWrapper onClick={this.handleClick.bind(this, i)} key={i} active={i === this.state.activeBirdId ? 'active' : ''} data={bird} />);
                   }, this)}
               </ul>
+
             {outputInfo}
+            </div>
             </div>
           );
       }
