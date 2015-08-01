@@ -1,27 +1,32 @@
 {
-  "name": "countryFinder",
+  "name": "birds",
   "version": "1.0.0",
-  "description": "a reactjs app",
-  "main": "index.js",
+  "description": "##Image Attributes(in progress)",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browserify": "^11.0.1",
+    "gulp": "^3.9.0",
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.3.4",
+    "react": "^0.13.3",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "devDependencies": {
+    "watchify": "^3.3.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chloeleichen/countryFinder.git"
+    "url": "https://github.com/chloeleichen/birds.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chloeleichen/countryFinder/issues"
+    "url": "https://github.com/chloeleichen/birds/issues"
   },
-  "homepage": "https://github.com/chloeleichen/countryFinder",
-  "devDependencies": {
-    "browserify": "^11.0.1",
-    "gulp": "^3.9.0",
-    "gulp-react": "^3.0.1",
-    "gulp-ruby-sass": "^1.0.5",
-    "gulp-util": "^3.0.6",
-    "gulp-watch": "^4.3.1"
-  }
+  "homepage": "https://github.com/chloeleichen/birds"
 }

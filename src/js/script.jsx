@@ -138,14 +138,6 @@
           );
     }
   });
-  // var LineChart = require("react-chartjs").Line;
-  // var MyComponent = React.createClass({
-
-  // render: function() {
-  //   var arr = [1, 2, 3];
-  //   return <LineChart data={arr}/>
-  //   }
-  // });
 
   React.render(<AllBirdsWrapper />, document.getElementById('content'));
   //React.render(<MyComponent />, document.getElementById('content'));
