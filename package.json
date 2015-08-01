@@ -5,11 +5,13 @@
   "main": "gulpfile.js",
   "dependencies": {
     "browserify": "^11.0.1",
+    "chart.js": "^1.0.2",
     "gulp": "^3.9.0",
     "gulp-ruby-sass": "^1.0.5",
     "gulp-util": "^3.0.6",
     "gulp-watch": "^4.3.4",
     "react": "^0.13.3",
+    "react-chartjs": "^0.6.0",
     "reactify": "^1.1.1",
     "vinyl-source-stream": "^1.1.0"
   },

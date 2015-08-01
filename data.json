@@ -3,7 +3,7 @@
         "scientificName": "Manorina melanotis",
         "commonName": "Black-eared Miner",
         "description": "empty",
-        "threats": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
         "recoveries":[
             {"recovery1": "recovery1 details"},
             {"recovery2": "recovery2 details"}
@@ -12,11 +12,11 @@
         "statsFor":"NSW",
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=449"
     },
-    {   "id":"dd",
+    {   "id":"db",
         "scientificName": "Dasyornis brachypterus",
         "commonName": "Eastern Bristlebird",
         "description": "empty",
-        "threats": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
         "recoveries":[
             {"recovery1": "recovery1 details"},
             {"recovery2": "recovery2 details"}
@@ -29,7 +29,7 @@
         "scientificName": "Atrichornis rufescens",
         "commonName": "Rufous Scrub-bird",
         "description": "empty",
-        "threats": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
         "recoveries":[
             {"recovery1": "recovery1 details"},
             {"recovery2": "recovery2 details"}
@@ -42,7 +42,7 @@
         "scientificName": "Lathamus discolor",
         "commonName": "Swift Parrot",
         "description": "empty",
-        "threats": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
         "recoveries":[
             {"recovery1": "recovery1 details"},
             {"recovery2": "recovery2 details"}
@@ -55,7 +55,7 @@
         "scientificName": "Botaurus poiciloptilus",
         "commonName": "Australasian Bittern",
         "description": "empty",
-        "threats": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
         "recoveries":[
             {"recovery1": "recovery1 details"},
             {"recovery2": "recovery2 details"}
@@ -68,7 +68,7 @@
         "scientificName": "Macronectes giganteus",
         "commonName": "Southern Giant Petrel",
         "description": "empty",
-        "threats": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
         "recoveries":[
             {"recovery1": "recovery1 details"},
             {"recovery2": "recovery2 details"}
@@ -81,7 +81,7 @@
         "scientificName": "Neochmia ruficauda ruficauda",
         "commonName": "Star Finch (eastern), Star Finch (southern)",
         "description": "empty",
-        "threats": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
         "recoveries":[
             {"recovery1": "recovery1 details"},
             {"recovery2": "recovery2 details"}
@@ -94,7 +94,7 @@
         "scientificName": "Pterodroma leucoptera leucoptera",
         "commonName": "Gould's Petrel",
         "description": "empty",
-        "threats": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
         "recoveries":[
             {"recovery1": "recovery1 details"},
             {"recovery2": "recovery2 details"}
@@ -107,7 +107,7 @@
         "scientificName": "Pezoporus occidentalis",
         "commonName": "Night Parrot",
         "description": "empty",
-        "threats": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
         "recoveries":[
             {"recovery1": "recovery1 details"},
             {"recovery2": "recovery2 details"}
@@ -120,7 +120,7 @@
         "scientificName": "Stipiturus mallee",
         "commonName": "Mallee Emu-wren",
         "description": "empty",
-        "threats": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
         "recoveries":[
             {"recovery1": "recovery1 details"},
             {"recovery2": "recovery2 details"}
@@ -133,7 +133,7 @@
         "scientificName": "Cyclopsitta diophthalma coxeni",
         "commonName": "Coxen's Fig-Parrot",
         "description": "empty",
-        "threats": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
         "recoveries":[
             {"recovery1": "recovery1 details"},
             {"recovery2": "recovery2 details"}
@@ -146,7 +146,7 @@
         "scientificName": "Poephila cincta cincta",
         "commonName": "Black-throated Finch (southern)",
         "description": "empty",
-        "threats": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
         "recoveries":[
             {"recovery1": "recovery1 details"},
             {"recovery2": "recovery2 details"}
@@ -159,7 +159,7 @@
         "scientificName": "Thalassarche eremita",
         "commonName": "Chatham Albatross",
         "description": "empty",
-        "threats": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
         "recoveries":[
             {"recovery1": "recovery1 details"},
             {"recovery2": "recovery2 details"}
@@ -172,7 +172,7 @@
         "scientificName": "Thalassarche chrysostoma",
         "commonName": "Grey-headed Albatross",
         "description": "empty",
-        "threats": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
         "recoveries":[
             {"recovery1": "recovery1 details"},
             {"recovery2": "recovery2 details"}
@@ -185,7 +185,7 @@
         "scientificName": "Amytornis barbatus barbatus",
         "commonName": "Grey Grasswren (Bulloo)",
         "description": "empty",
-        "threats": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
         "recoveries":[
             {"recovery1": "recovery1 details"},
             {"recovery2": "recovery2 details"}
@@ -198,7 +198,7 @@
         "scientificName": "Rostratula australis",
         "commonName": "Australian Painted Snipe",
         "description": "empty",
-        "threats": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
         "recoveries":[
             {"recovery1": "recovery1 details"},
             {"recovery2": "recovery2 details"}
@@ -211,7 +211,7 @@
         "scientificName": "Diomedea exulans amsterdamensis",
         "commonName": "Amsterdam Albatross",
         "description": "empty",
-        "threats": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
         "recoveries":[
             {"recovery1": "recovery1 details"},
             {"recovery2": "recovery2 details"}
@@ -224,7 +224,7 @@
         "scientificName": "Diomedea epomophora sanfordi",
         "commonName": "Northern Royal Albatross",
         "description": "empty",
-        "threats": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
         "recoveries":[
             {"recovery1": "recovery1 details"},
             {"recovery2": "recovery2 details"}
@@ -237,7 +237,7 @@
         "scientificName": "Diomedea exulans exulans",
         "commonName": "Tristan Albatross",
         "description": "empty",
-        "threats": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
         "recoveries":[
             {"recovery1": "recovery1 details"},
             {"recovery2": "recovery2 details"}

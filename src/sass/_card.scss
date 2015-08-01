@@ -8,6 +8,21 @@
     position: relative;
     width: 100%;
     margin: 0;
+    //mobile 
+    height: auto;
+    //sm
+    @media screen and (min-width: $sm){
+
+    }
+    //md 
+    @media screen and (min-width: $sm){
+
+    }
+    //lg 
+    @media screen and (min-width: $sm){
+
+    }
+
   }
 
   img{

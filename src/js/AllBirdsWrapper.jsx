@@ -31,19 +31,23 @@
     render: function(){
       //Get Active Bird
       var activeBird = this.state.data[this.state.activeBirdId];
+      var outputHero = null;
+      var outputInfo = null;
+      if(activeBird){
+        outputHero = <BirdHero data={activeBird} />
+        outputInfo = <BirdInfo data={activeBird} />
+      } 
+
+
       return( 
             <div>
-            {if(activeBird){
-              return <BirdHero data={activeBird} />
-            }}
-              <ul className="clearfix list-reset all-birds-wrapper ">
+            {outputHero}
+              <ul className="p2 clearfix list-reset all-birds-wrapper ">
                   {this.state.data.map(function(bird, i) {
                   return (<BirdWrapper onClick={this.handleClick.bind(this, i)} key={i} active={i === this.state.activeBirdId ? 'active' : ''} data={bird} />);
                   }, this)}
               </ul>
-            {if(activeBird){
-              <BirdInfo data={activeBird} />
-            }}
+            {outputInfo}
             </div>
           );
       }

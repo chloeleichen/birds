@@ -11,10 +11,11 @@
 
     render: function() {
       var listItemClassList = this.props.active + " block bird-wrapper p1 col col-12 sm-col-4 md-col-3 lg-col-3";
+      var src = "imgs/thumbnail/" + this.props.data.id + ".jpg";
       return (
         <li onClick={this.handleClick} className={listItemClassList} >
           <figure>
-          <img src="http://placehold.it/350x350" alt={this.props.data.commonName}/>
+          <img src={src} alt={this.props.data.commonName}/>
           <figcaption>{this.props.data.commonName}</figcaption>
           </figure>
         </li>
