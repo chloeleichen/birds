@@ -7,6 +7,17 @@
   margin: 0;
   height: auto;
 }
+@media screen and (min-width: 40em) {
+  .bird-wrapper figure {
+    height: calc((100vw - 15px - 6em) * 0.2083 );
+  }
+}
+@media screen and (min-width: 52em) {
+  .bird-wrapper figure {
+    height: calc((100vw - 15px - 6em) * 0.15625 );
+    max-height: 145px;
+  }
+}
 .bird-wrapper img {
   width: 100%;
   height: auto;
