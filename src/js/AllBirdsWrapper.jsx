@@ -2,6 +2,7 @@
   var BirdWrapper = require('./BirdWrapper.jsx');
   var BirdInfo = require('./BirdInfo.jsx');
   var BirdHero = require('./BirdHero.jsx');
+  var BirdClose = require('./BirdClose.jsx');
 
 
   var AllBirdsWrapper = React.createClass({
@@ -22,6 +23,12 @@
       }.bind(this));
     },
 
+    handleClose: function(){
+      this.setState({
+        activeBirdId: ''
+      })
+    },
+
     handleClick: function (i) {
       this.setState({
         activeBirdId: i
@@ -33,9 +40,11 @@
       var activeBird = this.state.data[this.state.activeBirdId];
       var outputHero = null;
       var outputInfo = null;
+      var closeButton = null;
       if(activeBird){
-        outputHero = <BirdHero data={activeBird} />
-        outputInfo = <BirdInfo data={activeBird} />
+        outputHero = <BirdHero data={activeBird} />;
+        outputInfo = <BirdInfo data={activeBird} />;
+        closeButton = <BirdClose onClick = {this.handleClose} />;
       } 
 
 
@@ -51,6 +60,7 @@
             <div className ="bird-card">
             {outputHero}
             {outputInfo}
+            {closeButton}
             </div>
           </div>
           );

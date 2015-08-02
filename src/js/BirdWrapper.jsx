@@ -1,12 +1,10 @@
 'use strict';
-  var BirdWrapper = React.createClass({
-    getInitialState: function() {
-      return {};
-    },
 
+  var BirdImage = require('./BirdImage.jsx');
+
+  var BirdWrapper = React.createClass({
     handleClick: function () {
       this.props.onClick(this);
-
     },
 
     render: function() {
@@ -15,7 +13,7 @@
       return (
         <li onClick={this.handleClick} className={listItemClassList} >
           <figure>
-          <img src={src} alt={this.props.data.commonName}/>
+          <BirdImage src={src} alt={this.props.data.commonName} />
           <figcaption>{this.props.data.commonName}</figcaption>
           </figure>
         </li>
@@ -23,4 +21,4 @@
     }
   });
 
-  module.exports = BirdWrapper;
+module.exports = BirdWrapper;

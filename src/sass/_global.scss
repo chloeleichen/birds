@@ -2,6 +2,25 @@ $sm: 40em;
 $md: 52em;
 $lg: 64em;
 
-img{
-  width: 100%;
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
 }
+
+//Img styles
+  img{
+    width: 100%;
+    height: auto;
+    @include transition(all, 1s);
+  }
+
+  img.loading{
+    opacity: 0;
+
+  }
+
+  img.loaded{
+    opacity: 1;
+  }
