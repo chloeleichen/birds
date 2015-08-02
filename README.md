@@ -11,7 +11,7 @@ Black-eared Miner(Manorina melanotis)
 
 Eastern Bristlebird (Dasyornis brachypterus)
 [Intro Image](https://flic.kr/p/ckjKfo) by [David Cook](https://flic.kr/p/4UUpTw) CC 2.0 Generic
-[High Res]() by [?]()
+[High Res]() by [Tim Dolly]()
 
 Rufous Scrub-bird(Atrichornis rufescens)
 [Intro Image](https://flic.kr/p/eS75to) by [REIN](https://www.flickr.com/photos/reinmage/)

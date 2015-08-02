@@ -30,3 +30,4 @@ node_modules
 .DS_Store
 .module-cache
 images
+imgs
