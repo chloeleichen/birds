@@ -18,11 +18,11 @@ Rufous Scrub-bird(Atrichornis rufescens)
 
 Swift Parrot (Lathamus discolor) 
 [Intro Image](https://flic.kr/p/8B7f6P) by [Julian Robinson](https://www.flickr.com/photos/ozjulian/)
-[High Res](https://flic.kr/p/4HggAb) by [Tobias Hayashi](https://www.flickr.com/photos/callocephalon/)
+[High Res](https://flic.kr/p/4Hqysg) by [Tobias Hayashi](https://www.flickr.com/photos/callocephalon/)
 
 Australasian Bittern (Botaurus poiciloptilus)
-[Intro Image](https://flic.kr/p/ormTq2) by [David Cook](https://www.flickr.com/photos/frankzed/) CC 2.0
-[High Res](https://flic.kr/p/uwkaWA) by [Frankzed](https://www.flickr.com/photos/frankzed/)
+[High Res](https://flic.kr/p/ormTq2) by [David Cook](https://www.flickr.com/photos/frankzed/) CC 2.0
+[High Res](https://flic.kr/p/4drLVQ) by [Richard Crook](https://www.flickr.com/photos/richardwc/) CC 2.0
 
 Southern Giant Petrel (Macronectes giganteus)
 [Intro Image](https://flic.kr/p/dGZLrv) by [Oliver Dodd](https://www.flickr.com/photos/oliverdodd/)
