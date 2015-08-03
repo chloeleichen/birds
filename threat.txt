@@ -1,13 +1,11 @@
-Habitat modification and disturbance or destruction
-Alien Species Predation/Competion
-Disease 
-Fire
-Road Accident
-Hunting
-Long-line fishing 
-fishing activities
-Others
+0 Habitat loss
+1 Climate change
+2 Alien Species
+3 Disease 
+4 Fire
+5 Fishing activities 
+6 Other human 
+7 Others
 
-
-
-
+Other human activities:
+Hunting, trapping, egg collection, litter ingestion, road accident, water pollution collision with window, etc

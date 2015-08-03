@@ -1,249 +1,252 @@
 [
     {   "id":"mm",
+        "commonwealthStatus": "Critically Endangered",
+        "nswStatus": "Endangered",
         "scientificName": "Manorina melanotis",
         "commonName": "Black-eared Miner",
-        "description": "empty",
-        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
-        "recoveries":[
-            {"recovery1": "recovery1 details"},
-            {"recovery2": "recovery2 details"}
-            ],
-        "stats":"100",
-        "statsFor":"NSW",
+        "description": "The Black-eared Miner is a large honeyeater (23 - 26 centimetres) that lives in mature mallee eucalypt woodland. They nest in upright forks of mallee eucalypts or dense epicormic shoots. The Black-eared Miner eats mainly invertebrates and lerps (the sugary exudate produced by psyllids).",
+        "threats": [9, 5, 2, 5, 6, 0, 0, 5],
+        "recoveries":[{
+            "List as Partnership species Saving our Species Program": "http://www.environment.nsw.gov.au/savingourspeciesapp/project.aspx?ProfileID=10505"
+            }],
+        "stats":"50",
+        "statsFor":"NSW (2000)",
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=449"
     },
     {   "id":"db",
+        "commonwealthStatus": "Endangered",
+        "nswStatus": "Endangered",
         "scientificName": "Dasyornis brachypterus",
         "commonName": "Eastern Bristlebird",
-        "description": "empty",
-        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
-        "recoveries":[
-            {"recovery1": "recovery1 details"},
-            {"recovery2": "recovery2 details"}
-            ],
-        "stats":"100",
-        "statsFor":"NSW",
+        "description": "The Eastern Bristlebird is about 18–21 cm in length and about 33–51 g in weight and inhabits low dense vegetation in a broad range of habitat types including sedgeland, heathland, swampland, shrubland, sclerophyll forest and woodland, and rainforest.",
+        "threats": [8, 4, 6, 5, 6, 0, 5, 5],
+        "recoveries":[{
+            "Saving Our Species program": "http://www.environment.nsw.gov.au/savingourspecies/about.htm"
+            }],
+        "stats":"2000",
+        "statsFor":"Australia(1998)",
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=533"
     },
     {   "id":"ar",
+        "commonwealthStatus": "Vulnerable",
+        "nswStatus": "Endangered",
         "scientificName": "Atrichornis rufescens",
         "commonName": "Rufous Scrub-bird",
-        "description": "empty",
-        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
-        "recoveries":[
-            {"recovery1": "recovery1 details"},
-            {"recovery2": "recovery2 details"}
-            ],
-        "stats":"100",
-        "statsFor":"NSW",
-        "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=655"
+        "description": "The Rufous Scrub-bird  is a stocky, ground-dwelling bird of moderate size (body length about 17cm).",
+        "threats": [8, 5, 4, 2, 6, 0, 5, 5],
+        "recoveries":[{
+            "plan": "http://google.com"
+            }],
+        "stats":"unknown",
+        "statsFor":"Austrlia",
+        "A Saving Our Species conservation project is currently being developed for this species": "http://www.environment.nsw.gov.au/threatenedspeciesapp/profile.aspx?id=10076"
     },
     {   "id":"ld",
+        "commonwealthStatus": "Endangered",
+        "nswStatus": "Endangered",
         "scientificName": "Lathamus discolor",
         "commonName": "Swift Parrot",
-        "description": "empty",
-        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
-        "recoveries":[
-            {"recovery1": "recovery1 details"},
-            {"recovery2": "recovery2 details"}
-            ],
-        "stats":"100",
-        "statsFor":"NSW",
+        "description": "The swift parrot is about 25 cm (10 in) long and has long pointed wings and long tapering tail feathers.",
+        "threats": [9, 3, 5, 5, 4, 0, 6, 5],
+        "recoveries":[{
+            "A Saving Our Species conservation project is currently being developed": ""
+            }],
+        "stats":"2000",
+        "statsFor":"Australia(2000)",
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=744"
     },
     {   "id":"bp",
+        "commonwealthStatus": "Endangered",
+        "nswStatus": "Endangered",
         "scientificName": "Botaurus poiciloptilus",
         "commonName": "Australasian Bittern",
-        "description": "empty",
-        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
-        "recoveries":[
-            {"recovery1": "recovery1 details"},
-            {"recovery2": "recovery2 details"}
-            ],
-        "stats":"100",
-        "statsFor":"NSW",
+        "description": "The Australasian Bittern is a large, stocky, thick-necked heron-like bird with camouflage-like plumage. Individuals grow to a length of 66–76 cm, with a wingspan of 1050–1180 cm. The Australasian Bittern is generally solitary, but sometimes occurs in pairs or dispersed aggregations of up to 12 birds. The species apparently breeds in solitary, territorial pairs but little more is known about its breeding ecology.",
+        "threats": [8, 6, 6, 2, 1, 0, 5, 8],
+        "recoveries":[{
+            "A Saving Our Species conservation project is currently being developed": " "
+            }],
+        "stats":"1000",
+        "statsFor":"Austrlia",
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=1001"
     },
     {   "id":"mg",
+        "commonwealthStatus": "Endangered",
+        "nswStatus": "Endangered",
         "scientificName": "Macronectes giganteus",
         "commonName": "Southern Giant Petrel",
-        "description": "empty",
-        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
-        "recoveries":[
-            {"recovery1": "recovery1 details"},
-            {"recovery2": "recovery2 details"}
-            ],
-        "stats":"100",
-        "statsFor":"NSW",
+        "description": " The southern giant petrel measures 86 to 99 cm (34–39 in) with a wingspan of 185 to 205 cm (73–81 in) and is the largest petrel",
+        "threats": [5, 5, 4, 2, 0, 9, 8, 5],
+        "recoveries":[{
+            "Saving Our Species program": "http://www.environment.nsw.gov.au/savingourspeciesapp/project.aspx?ProfileID=10912"
+            }],
+        "stats":"7090",
+        "statsFor":"Austrlia(2001)",
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=1060"
     },
     {   "id":"nrr",
+        "commonwealthStatus": "Endangered",
+        "nswStatus": "Presumed Extinct",
         "scientificName": "Neochmia ruficauda ruficauda",
         "commonName": "Star Finch (eastern), Star Finch (southern)",
-        "description": "empty",
-        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
-        "recoveries":[
-            {"recovery1": "recovery1 details"},
-            {"recovery2": "recovery2 details"}
-            ],
-        "stats":"100",
-        "statsFor":"NSW",
+        "description": "The Star Finch (eastern) is a small and compact finch that measures approximately 11 to 12 cm in length and weighs about 10 or 11 g.",
+        "threats": [6, 5, 5, 2, 1, 0, 8, 5],
+        "recoveries":[],
+        "stats":"50",
+        "statsFor":"Austrlia",
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=26027"
     },
     {   "id":"pll",
+        "commonwealthStatus": "Endangered",
+        "nswStatus": "Vulnerable",
         "scientificName": "Pterodroma leucoptera leucoptera",
         "commonName": "Gould's Petrel",
-        "description": "empty",
-        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
-        "recoveries":[
-            {"recovery1": "recovery1 details"},
-            {"recovery2": "recovery2 details"}
-            ],
-        "stats":"100",
-        "statsFor":"NSW",
+        "description": "Gould's Petrel is a small petrel, white below and dark brown and grey above.There is a dark M pattern across the upper wings, as in all members of the genus Pterodroma.",
+        "threats": [2, 5, 4, 2, 4, 2, 7, 5],
+        "recoveries":[{
+            "Saving Our Species program": "http://www.environment.nsw.gov.au/savingourspeciesapp/project.aspx?ProfileID=10917"
+            }],
+        "stats":"2500",
+        "statsFor":"Austrlia (20090",
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=26033"
     },
     {   "id":"po",
+        "commonwealthStatus": "Endangered",
+        "nswStatus": "Presumed Extinct",
         "scientificName": "Pezoporus occidentalis",
         "commonName": "Night Parrot",
-        "description": "empty",
-        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
-        "recoveries":[
-            {"recovery1": "recovery1 details"},
-            {"recovery2": "recovery2 details"}
-            ],
-        "stats":"100",
-        "statsFor":"NSW",
+        "description": "A relatively small parrot, the species' colour is predominantly a yellowish green, mottled with dark brown, blacks and yellows.",
+        "threats": [8, 2, 8, 2, 8, 0, 8, 5],
+        "recoveries":[],
+        "stats":"20",
+        "statsFor":"Austrlia",
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=59350"
     },
     {   "id":"sm",
+        "commonwealthStatus": "Endangered",
+        "nswStatus": "Endangered",
         "scientificName": "Stipiturus mallee",
         "commonName": "Mallee Emu-wren",
-        "description": "empty",
-        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
-        "recoveries":[
-            {"recovery1": "recovery1 details"},
-            {"recovery2": "recovery2 details"}
-            ],
-        "stats":"100",
-        "statsFor":"NSW",
+        "description": "The Mallee emu-wren is an average 16.5 cm from head to tail (Higgins et al. 2001). (6.5 in.) The adult male Mallee emu-wren has olive-brown upperparts with dark streaks, and a pale rufous unstreaked crown, and grey-brown wings. It has a sky blue throat, upper chest, lores and ear coverts.",
+        "threats": [9, 4, 5, 2, 6, 0, 4, 2],
+        "recoveries":[],
+        "stats":"4000",
+        "statsFor":"Austrlia(2006)",
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=59459"
     },
     {   "id":"cdc",
+        "commonwealthStatus": "Critically Endangered",
+        "nswStatus": "Endangered",
         "scientificName": "Cyclopsitta diophthalma coxeni",
         "commonName": "Coxen's Fig-Parrot",
-        "description": "empty",
-        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
-        "recoveries":[
-            {"recovery1": "recovery1 details"},
-            {"recovery2": "recovery2 details"}
-            ],
+        "description": "Coxen's fig parrot is about 15–16 cm long, larger than the other subspecies of double-eyed fig parrot. Its very short tail gives it a top-heavy, big-headed appearance.",
+        "threats": [9, 2, 2, 4, 4, 0, 8, 8],
+        "recoveries":[{
+            " Saving Our Species program": "http://www.environment.nsw.gov.au/savingourspeciesapp/project.aspx?ProfileID=10195"
+            }],
         "stats":"100",
-        "statsFor":"NSW",
+        "statsFor":"Austrlia(2000)",
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=59714"
     },
     {   "id":"pcc",
+        "commonwealthStatus": "Endangered",
+        "nswStatus": "Endangered",
         "scientificName": "Poephila cincta cincta",
         "commonName": "Black-throated Finch (southern)",
-        "description": "empty",
-        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
-        "recoveries":[
-            {"recovery1": "recovery1 details"},
-            {"recovery2": "recovery2 details"}
-            ],
-        "stats":"100",
-        "statsFor":"NSW",
+        "description": "Measuring around 10 cm (4 in) in length, the black-throated finch has a short black bill, lores, and throat, sharply delineated from the rest of the pale grey head.",
+        "threats": [8, 3, 7, 1, 5, 0, 6, 2],
+        "recoveries":[{
+            "Saving Our Species program": "http://www.environment.nsw.gov.au/savingourspeciesapp/project.aspx?ProfileID=10641"
+            }],
+        "stats":"10 000",
+        "statsFor":"Austrlia (2011)",
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=64447"
     },
     {   "id":"te",
+        "commonwealthStatus": "Endangered",
+        "nswStatus": "Endangered",
         "scientificName": "Thalassarche eremita",
         "commonName": "Chatham Albatross",
-        "description": "empty",
-        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
-        "recoveries":[
-            {"recovery1": "recovery1 details"},
-            {"recovery2": "recovery2 details"}
-            ],
-        "stats":"100",
-        "statsFor":"NSW",
+        "description": "The Chatham albatross weighs 3.1 to 4.7 kg (6.8–10.4 lb)[4] and it has a length of 90 cm (35 in). The adult has a dark grey crown, face, upper mantle, back, upperwing, tail, and throat. They have a white rump and underparts.",
+        "threats": [2, 5, 8, 1, 1, 8, 8, 2],
+        "recoveries":[],
+        "stats":"11 000",
+        "statsFor":"Globally(2003)",
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=64457"
     },
     {   "id":"tc",
+        "commonwealthStatus": "Endangered",
+        "nswStatus": "Endangered",
         "scientificName": "Thalassarche chrysostoma",
         "commonName": "Grey-headed Albatross",
-        "description": "empty",
-        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
-        "recoveries":[
-            {"recovery1": "recovery1 details"},
-            {"recovery2": "recovery2 details"}
-            ],
-        "stats":"100",
-        "statsFor":"NSW",
+        "description": "The grey-headed albatross averages 81 cm (32 in) in length and 2.2 m (7.2 ft) in wingspan. Weight can range from 2.8 to 4.4 kg (6.2 to 9.7 lb), with a mean mass of 3.65 kg (8.0 lb).",
+        "threats": [2, 5, 7, 1, 1, 8, 6, 2],
+        "recoveries":[],
+        "stats":"300",
+        "statsFor":"Austrlia(2005)",
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=66491"
     },
     {   "id":"abb",
+        "commonwealthStatus": "Endangered",
+        "nswStatus": "Endangered",
         "scientificName": "Amytornis barbatus barbatus",
         "commonName": "Grey Grasswren (Bulloo)",
-        "description": "empty",
-        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
-        "recoveries":[
-            {"recovery1": "recovery1 details"},
-            {"recovery2": "recovery2 details"}
-            ],
-        "stats":"100",
-        "statsFor":"NSW",
+        "description": "This is a small bird ranging in length between 18–20 cm, a wing span of approximately 21 cm and weighing between 15 and 23 g.[11] Its general colour is gingery brown suffused with grey and off white striations.",
+        "threats": [9, 6, 8, 1, 1, 1, 1, 2],
+        "recoveries":[{
+            " Saving Our Species program": "http://www.environment.nsw.gov.au/savingourspeciesapp/project.aspx?ProfileID=10047"
+            }],
+        "stats":"1600",
+        "statsFor":"NSW(2010)",
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=67065"
     },
     {   "id":"ra",
+        "commonwealthStatus": "Endangered",
+        "nswStatus": "Endangered",
         "scientificName": "Rostratula australis",
         "commonName": "Australian Painted Snipe",
-        "description": "empty",
-        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
-        "recoveries":[
-            {"recovery1": "recovery1 details"},
-            {"recovery2": "recovery2 details"}
-            ],
-        "stats":"100",
-        "statsFor":"NSW",
+        "description": "The head, neck and upper breast is chocolate brown (in the male, dark grey with a buff median stripe on the crown), fading to rufous in the centre of the hindneck and merging to dark, barred grey on the back. ",
+        "threats": [9, 5, 4, 1, 5, 1, 6, 3],
+        "recoveries":[{
+            "Priority Action Plans": "http://www.environment.nsw.gov.au/threatenedspeciesapp/PasSearchSpecies.aspx?speciesName=Australian+Painted+Snipe&generalType=Birds"
+            }],
+        "stats":"5000",
+        "statsFor":"Austrlia(2000)",
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=77037"
     },
     {   "id":"dea",
+        "commonwealthStatus": "Endangered",
+        "nswStatus": "Endangered",
         "scientificName": "Diomedea exulans amsterdamensis",
         "commonName": "Amsterdam Albatross",
-        "description": "empty",
-        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
-        "recoveries":[
-            {"recovery1": "recovery1 details"},
-            {"recovery2": "recovery2 details"}
-            ],
-        "stats":"100",
-        "statsFor":"NSW",
+        "description": "The Amsterdam albatross is a great albatross that breeds in brown, rather than in the more usual white, plumage. This bird weighs 4.8 to 8 kg (11–18 lb) and is 107 to 122 cm (42–48 in) long with a wingspan of 280 to 340 cm (110–130 in).",
+        "threats": [8, 5, 3, 5, 1, 3, 8, 4],
+        "recoveries":[],
+        "stats":"very few",
+        "statsFor":"Austrlia",
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=82330"
     },
     {   "id":"des",
+        "commonwealthStatus": "Endangered",
+        "nswStatus": "Endangered",
         "scientificName": "Diomedea epomophora sanfordi",
         "commonName": "Northern Royal Albatross",
-        "description": "empty",
-        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
-        "recoveries":[
-            {"recovery1": "recovery1 details"},
-            {"recovery2": "recovery2 details"}
-            ],
-        "stats":"100",
-        "statsFor":"NSW",
+        "description": "empThe northern royal albatross is typically about 115 cm (45 in), weighs 6.2 to 8.2 kg (14–18 lb) and has a wingspan from 270 to 305 cm (106–120 in).",
+        "threats": [2, 5, 1, 1, 1, 9, 8, 4],
+        "recoveries":[],
+        "stats":"20,000",
+        "statsFor":"Globally(2012)",
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=82331"
     },
     {   "id":"dee",
+        "commonwealthStatus": "Endangered",
+        "nswStatus": "Endangered",
         "scientificName": "Diomedea exulans exulans",
         "commonName": "Tristan Albatross",
-        "description": "empty",
-        "threats": [4, 5, 3, 4, 1, 6, 0, 8, 2],
-        "recoveries":[
-            {"recovery1": "recovery1 details"},
-            {"recovery2": "recovery2 details"}
-            ],
-        "stats":"100",
-        "statsFor":"NSW",
+        "description": "It is practically indistinguishable from the wandering albatross at sea; the Tristan albatross is smaller and has a slightly darker back. The Tristan albatross is 110 cm (43 in) and has a wingspan of up to 3.05 m (10.0 ft).",
+        "threats": [2, 6, 6, 1, 1, 9, 6, 2],
+        "recoveries":[],
+        "stats":"2000",
+        "statsFor":"Austrlia(2001)",
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=82337"
     }
 ]
