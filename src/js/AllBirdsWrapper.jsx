@@ -45,7 +45,7 @@
       var outputInfo = null;
       var closeButton = null;
       var cardStyle = {
-        top: window.scrollY
+        top: 0
       }
 
       if(activeBird){
