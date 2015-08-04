@@ -15,7 +15,7 @@ var BirdImage = React.createClass({
   },
 
   render: function(){
-    return <img className = {this.state.loaded? "loaded" : "loading"} src = {this.props.src} alt ={this.props.alt} />; 
+    return (<img className = {this.state.loaded? "loaded" : "loading"} src = {this.props.src} alt ={this.props.alt} />); 
   }
 });
 

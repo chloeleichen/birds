@@ -9,8 +9,40 @@ $lg: 64em;
     transition:         $transition;
 }
 
+// generic transform
+@mixin transform($transforms) {
+     -moz-transform: $transforms;
+       -o-transform: $transforms;
+      -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+          transform: $transforms;
+}
+
+//transform origin
+@mixin transform-origin ($origin) {
+    moz-transform-origin: $origin;
+       -o-transform-origin: $origin;
+      -ms-transform-origin: $origin;
+  -webkit-transform-origin: $origin;
+          transform-origin: $origin;
+}
+
+// translate
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+
+//Vertical align 
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 //Img styles
-  img{
+  img.loaded{
     width: 100%;
     height: auto;
     @include transition(all, 1s);

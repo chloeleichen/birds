@@ -5,7 +5,7 @@ var BirdClose = React.createClass({
   },
 
   render: function(){
-    return <a className ="btn" onClick = {this.handleClose} > x </a>;
+    return <a className ="p2 block btn btn-close icon-cross" onClick = {this.handleClose} > </a>;
   }
 
 });

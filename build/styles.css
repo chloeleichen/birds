@@ -1,4 +1,4 @@
-img {
+img.loaded {
   width: 100%;
   height: auto;
   -moz-transition: all, 1s;
@@ -13,6 +13,73 @@ img.loading {
 
 img.loaded {
   opacity: 1;
+}
+
+.btn-close {
+  text-align: right;
+  cursor: pointer;
+}
+
+.bird-card {
+  -moz-transition: all, 2s;
+  -o-transition: all, 2s;
+  -webkit-transition: all, 2s;
+  transition: all, 2s;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.open .bird-card {
+  position: absolute;
+  max-height: 99999px;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  /* prevents flicker */
+  -webkit-overflow-scrolling: touch;
+}
+
+.bird-info-wrapper {
+  -moz-transform: translate(0, 100%);
+  -o-transform: translate(0, 100%);
+  -ms-transform: translate(0, 100%);
+  -webkit-transform: translate(0, 100%);
+  transform: translate(0, 100%);
+  -moz-transition: all, 2s;
+  -o-transition: all, 2s;
+  -webkit-transition: all, 2s;
+  transition: all, 2s;
+}
+.open .bird-info-wrapper {
+  -moz-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.bird-hero {
+  height: 29.4118vw;
+  background: #67533A;
+  -moz-transform: translate(0, -100%);
+  -o-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  -webkit-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+  -moz-transition: all, 2s;
+  -o-transition: all, 2s;
+  -webkit-transition: all, 2s;
+  transition: all, 2s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.open .bird-hero {
+  -moz-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 .bird-wrapper.active {
@@ -42,4 +109,18 @@ img.loaded {
   left: 0;
   box-sizing: border-box;
   padding: 0.5rem;
+}
+
+.bird-list-wrapper {
+  -moz-transition: all, 2s;
+  -o-transition: all, 2s;
+  -webkit-transition: all, 2s;
+  transition: all, 2s;
+}
+
+.open .bird-list-wrapper {
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  max-height: 0;
 }

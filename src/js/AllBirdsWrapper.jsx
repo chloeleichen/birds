@@ -9,7 +9,8 @@
     getInitialState: function() {
     return {
       data: [],
-      activeBirdId: ''
+      activeBirdId: '',
+      wrapperClass: 'close' 
       };
     },
 
@@ -25,13 +26,15 @@
 
     handleClose: function(){
       this.setState({
-        activeBirdId: ''
+        activeBirdId: '',
+        wrapperClass:'close'
       })
     },
 
     handleClick: function (i) {
       this.setState({
-        activeBirdId: i
+        activeBirdId: i,
+        wrapperClass:'open'
       })
     },
 
@@ -41,26 +44,33 @@
       var outputHero = null;
       var outputInfo = null;
       var closeButton = null;
+      var cardStyle = {
+        top: window.scrollY
+      }
+
       if(activeBird){
         outputHero = <BirdHero data={activeBird} />;
         outputInfo = <BirdInfo data={activeBird} />;
         closeButton = <BirdClose onClick = {this.handleClose} />;
       } 
 
-
       return( 
-        <div>
-            <div className="container">
+        <div className={this.state.wrapperClass}>
+            <div className="container bird-list-wrapper">
               <ul className="p2 clearfix list-reset all-birds-wrapper ">
                   {this.state.data.map(function(bird, i) {
                   return (<BirdWrapper onClick={this.handleClick.bind(this, i)} key={i} active={i === this.state.activeBirdId ? 'active' : ''} data={bird} />);
                   }, this)}
               </ul>
             </div>
-            <div className ="bird-card">
+            <div className ="bird-card" style={cardStyle}>
+            <div className="bird-hero">
             {outputHero}
-            {outputInfo}
+            </div>
+            <div className ="bird-info-wrapper container">
             {closeButton}
+            {outputInfo}
+            </div>
             </div>
           </div>
           );
