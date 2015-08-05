@@ -3,13 +3,14 @@
   var BirdInfo = require('./BirdInfo.jsx');
   var BirdHero = require('./BirdHero.jsx');
   var BirdClose = require('./BirdClose.jsx');
+  var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 
 
   var AllBirdsWrapper = React.createClass({
     getInitialState: function() {
     return {
       data: [],
-      activeBirdId: '',
+      activeBirdId: null,
       wrapperClass: 'close' 
       };
     },
@@ -26,7 +27,7 @@
 
     handleClose: function(){
       this.setState({
-        activeBirdId: '',
+        activeBirdId: null,
         wrapperClass:'close'
       })
     },
@@ -64,13 +65,12 @@
               </ul>
             </div>
             <div className ="bird-card" style={cardStyle}>
-            <div className="bird-hero">
-            {outputHero}
-            </div>
-            <div className ="bird-info-wrapper container">
+            <ReactCSSTransitionGroup transitionName="example">
+            <div className ="bird-info-wrapper container" key={this.state.activeBirdId}>
             {closeButton}
             {outputInfo}
             </div>
+            </ReactCSSTransitionGroup>
             </div>
           </div>
           );

@@ -1,13 +1,33 @@
-@import "global";
-@import "layout";
-@import "header";
-@import "footer";
-@import "structure";
-@import "card";
-@import "list";
+// @import "global";
+// @import "layout";
+// @import "header";
+// @import "footer";
+// @import "structure";
+// @import "card";
+// @import "list";
 
 
+.example-enter {
+  opacity: 0.01;
+  background: red;
+}
 
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 5s ease-in;
+  //background: yellow;
+}
+
+.example-leave {
+  opacity: 1;
+  background: green;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 5s ease-in;
+  background: navy;
+}
 
 
 
