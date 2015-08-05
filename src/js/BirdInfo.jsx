@@ -8,6 +8,10 @@ var BirdStatus = require('./BirdStatus.jsx');
 
 
 var BirdInfo = React.createClass({
+    componentDidMount: function(){
+      //console.log("mounted");
+
+    },
     render: function(){
       return(
           <div className='p2 bird-info'>

@@ -9,30 +9,31 @@
 
 .example-enter {
   opacity: 0.01;
-  background: red;
+  transition: opacity 3s ease-in;
+  background: green;
 }
 
 .example-enter.example-enter-active {
   opacity: 1;
-  transition: opacity 5s ease-in;
-  //background: yellow;
+  transition: opacity 3s ease-in;
+  background: yellow;
 }
 
 .example-leave {
   opacity: 1;
-  background: green;
+  transition: opacity 3s ease-in;
+  background: red;
 }
 
 .example-leave.example-leave-active {
   opacity: 0.01;
-  transition: opacity 5s ease-in;
+  transition: opacity 3s ease-in;
   background: navy;
 }
 
-
-
-
-
+.open .all-birds-wrapper{
+  display: none;
+}
 
 
 

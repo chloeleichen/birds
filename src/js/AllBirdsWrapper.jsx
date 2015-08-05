@@ -28,16 +28,37 @@
     handleClose: function(){
       this.setState({
         activeBirdId: null,
-        wrapperClass:'close'
-      })
+        wrapperClass:'closing'
+      });
+
+      var open = window.setTimeout(function (self) {
+        self.setState({
+          wrapperClass:'closed'
+        });
+      }, 1000, this);
     },
 
     handleClick: function (i) {
       this.setState({
         activeBirdId: i,
-        wrapperClass:'open'
-      })
+        wrapperClass:'opening'
+      });
+
+      var open = window.setTimeout(function (self) {
+        self.setState({
+          wrapperClass:'open'
+        });
+      }, 1000, this);
     },
+
+    // componentWillAppear:function(){
+    //   console.log('will appear');
+
+    // },
+
+    // componentDidAppear: function(){
+    //   console.log("")
+    // }
 
     render: function(){
       //Get Active Bird
