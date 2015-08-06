@@ -1,16 +1,13 @@
  'use strict';
   var BirdWrapper = require('./BirdWrapper.jsx');
   var BirdInfo = require('./BirdInfo.jsx');
-  var BirdHero = require('./BirdHero.jsx');
-  var BirdClose = require('./BirdClose.jsx');
-
-
+  
   var AllBirdsWrapper = React.createClass({
     getInitialState: function() {
     return {
       data: [],
       activeBirdId: '',
-      wrapperClass: 'close' 
+      wrapperClass: 'closed' 
       };
     },
 
@@ -25,33 +22,52 @@
     },
 
     handleClose: function(){
-      this.setState({
-        activeBirdId: '',
-        wrapperClass:'close'
-      })
+      this.close();
     },
 
     handleClick: function (i) {
+      this.open(i);
+    },
+
+    open: function(i){
       this.setState({
         activeBirdId: i,
-        wrapperClass:'open'
-      })
+        wrapperClass:'opening',
+      });
+      body.classList.add("fix");
+
+      var o = window.setTimeout(function (self) {
+        self.setState({
+          wrapperClass:'open'
+        });
+      }, 1000, this);
+
+    },
+
+    close: function(){
+      this.setState({
+        wrapperClass:'closing'
+      });
+      var c = window.setTimeout(function(self){
+        body.classList.remove("fix");
+        body.style.top = "0px";
+        self.setState({
+          activeBirdId: null,
+          wrapperClass: "closed"
+        });
+      }, 1000, this);
     },
 
     render: function(){
       //Get Active Bird
       var activeBird = this.state.data[this.state.activeBirdId];
-      var outputHero = null;
       var outputInfo = null;
-      var closeButton = null;
-      var cardStyle = {
+      ///TO Be Deleted
+      var style ={
         top: 0
       }
-
       if(activeBird){
-        outputHero = <BirdHero data={activeBird} />;
-        outputInfo = <BirdInfo data={activeBird} />;
-        closeButton = <BirdClose onClick = {this.handleClose} />;
+        outputInfo = <BirdInfo onClick = {this.handleClose} data={activeBird} />;
       } 
 
       return( 
@@ -63,14 +79,8 @@
                   }, this)}
               </ul>
             </div>
-            <div className ="bird-card" style={cardStyle}>
-            <div className="bird-hero">
-            {outputHero}
-            </div>
-            <div className ="bird-info-wrapper container">
-            {closeButton}
+            <div className ="bird-card-wrapper">
             {outputInfo}
-            </div>
             </div>
           </div>
           );

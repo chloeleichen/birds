@@ -1,6 +1,7 @@
 $sm: 40em;
 $md: 52em;
 $lg: 64em;
+$delay: 1s;
 
 @mixin transition($transition...) {
     -moz-transition:    $transition;

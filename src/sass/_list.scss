@@ -22,28 +22,6 @@
     // //lg 
     // @media screen and (min-width: $lg){
     // }
-
+    }
   }
 
-  figcaption{
-    position: absolute;
-    bottom: 0;
-    width:100%;
-    left: 0;
-    box-sizing: border-box;
-    padding: 0.5rem;
-  }
-}
-
-.bird-list-wrapper{
-  @include transition(all, 2s);
-}
-
-.open .bird-list-wrapper{
-  position: absolute;
-  overflow: hidden;
-  opacity: 0;
-  max-height: 0;
-  display: none;
-
-}

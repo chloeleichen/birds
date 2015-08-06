@@ -8,4 +8,7 @@ var React = require('react');
 window.React = React; 
 
 var AllBirdsWrapper = require('./AllBirdsWrapper.jsx');
+var body = document.getElementById('body');
+var main = document.getElementById('main');
+
 React.render(<AllBirdsWrapper/>, document.getElementById('content')); 

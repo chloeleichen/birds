@@ -1,44 +1,71 @@
-.bird-card{
-  @include transition(all, 2s);
-  position: absolute;
-  overflow: hidden;
-  
+// .bird-card-wrapper{
+//   @include transition(all, 2s);
+//   position: absolute;
+//   overflow: hidden;
+// }
+
+%fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    /* prevents flicker */
+    -webkit-overflow-scrolling: touch;
 }
 
-
-.open .bird-card{
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translate3d(0, 0, 0);
-  overflow-y: auto;
-  /* prevents flicker */
-  -webkit-overflow-scrolling: touch;
-
+%absolute{
+   position: absolute;
+   overflow: hidden;
 }
 
-.bird-info-wrapper{
-  @include translate(0, 100%);
-  @include transition(all, 2s);
-  .open &{
-    @include translate(0, 0);
+.bird-card-wrapper{
+   @extend %absolute;
+   @include transition(all, $delay);
+   .bird-hero{
+    @include transition(all, $delay);
+    line-height: 1;
+    height: 29.412vw;
+    background: #fff;
+   }
+   .bird-info{
+    @include transition(all, $delay);
+    background: #fff;
+    z-index: 100;
+   }
+  .opening &{
+    .bird-hero{
+      @include translate(0, -100%);
+    }
+    .bird-info{
+      @include translate(0, 100%);
+    }
   }
-}
-
-.bird-hero{
-  height: 29.4118vw;
-  background: #67533A;
-  @include translate(0, -100%);
-  @include transition(all, 2s);
   .open &{
-    @include translate(0, 0);
+    @extend %fixed;
+    
+    .bird-hero{
+      @include translate(0, 0);
+    }
+    .bird-info{
+      @include translate(0, 0);
+    } 
   }
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+  .closing &{
+    @extend %fixed;
+    .bird-hero{
+      @include translate(0, -100%);
+    }
+    .bird-info{
+      @include translate(0, 100%);
+    }
+    
+  }
+  .closed &{
+
+  }
+
 }
-
-
-
-
-
