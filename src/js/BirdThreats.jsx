@@ -4,23 +4,24 @@ var RadarChart = require("react-chartjs").Radar;
 // To change other default settings, refer to : http://www.chartjs.org/docs/#getting-started-global-chart-configuration
 
 Chart.defaults.global.scaleOverride=true;
-Chart.defaults.global.scaleSteps=10;
-Chart.defaults.global.scaleStepWidth=1;
+Chart.defaults.global.scaleSteps=1;
+Chart.defaults.global.scaleStepWidth=10;
 Chart.defaults.global.scaleStartValue=0;
 
 
 var chartOptions ={
     scaleShowLine : true,
-    angleShowLineOut : true,
+    angleShowLineOut : false,
     scaleShowLabels : false,
     scaleBeginAtZero : true,
-    angleLineColor : "rgba(0,0,0,.1)",
+    angleLineColor : "rgba(255,255,255,.3)",
+    scaleLineColor: "rgba(255,255,255,.4)",
     angleLineWidth : 1,
     responsive: true,
-    pointLabelFontFamily : "'Arial'",
+    pointLabelFontFamily : "'inherit'",
     pointLabelFontStyle : "normal",
     pointLabelFontSize : 10,
-    pointLabelFontColor : "#666",
+    pointLabelFontColor : "#bdc3c7",
     pointDot : true,
     pointDotRadius : 3,
     pointDotStrokeWidth : 1,
@@ -28,7 +29,10 @@ var chartOptions ={
     datasetStroke : true,
     datasetStrokeWidth : 2,
     datasetFill : true,
-    tooltipTemplate:"<%= value %>" 
+    tooltipTemplate:"<%=label%>",
+    tooltipFillColor: "rgba(0,0,0,0.8)",
+    tooltipFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+    legendTemplate : ""
 
 }
 
@@ -39,8 +43,8 @@ render: function(){
     datasets: [
         {
             label: "Threats",
-            fillColor: "rgba(220,220,220,0.2)",
-            strokeColor: "rgba(220,220,220,1)",
+            fillColor: "rgba(239,83,80,0.4)",
+            strokeColor: "#ef5350",
             pointColor: "rgba(220,220,220,1)",
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
