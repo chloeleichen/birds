@@ -1,0 +1,9 @@
+body{
+  color: $light;
+}
+a{
+  color: $red;
+  a:hover, a:focus{
+    color: $red-lighter;
+  }
+}

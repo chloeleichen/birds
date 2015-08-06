@@ -4,21 +4,27 @@
     position: relative;
     width: 100%;
     margin: 0;
-    //mobile 
-    height: auto;
-    //sm
-    @media screen and (min-width: $sm){
-      height: calc((100vw - 15px - 6em) * 0.2083 );
-      
+    background: url("./../ring.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc((100vw - 2em)*0.625);
+    max-height: 18.125em;
+    background-color: lighten($dark, 10%);
+    cursor: pointer;
+
+    img{
+      -webkit-filter: grayscale(100%); 
+      filter: grayscale(100%);
+      @include transition(all, 0.1s);
+      &:hover, &:focus{
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+        }
+      }
     }
-    // md 
-    @media screen and (min-width: $md){
-      height: calc((100vw - 15px - 6em) * 0.2083 );
-      max-height: 197px;
-    }
-    // //lg 
-    // @media screen and (min-width: $lg){
-    // }
+    .figcaption{
+      color: $grey;
     }
   }
 
@@ -27,46 +33,44 @@
     &.active{
       opacity: 1;
     }
-  figcaption{
-    display: none;
+  .figcaption{
+    opacity: 0;
   }
 }
 
 //State 
 .bird-wrapper{
   overflow: hidden;
-  @include transition(all, 0.1s);
+  @include transition(all, 0.5s);
   &.active{
-      //border-radius: 0;
+      @include transition(all, $delay);
+      @include scale(1);
     }
    
   .opening &{
     @extend %fade;
     &.active{
-      @include transition(all, $delay);
-      @include scale(2);
-      opacity: 0.1;
+      @include scale(0);
+      //opacity: 0.1;
     }
   }
   .open &{
     @extend %fade;
       &.active{
-      opacity: 0;
-      @include scale(2);
+      //opacity: 0;
+      @include scale(0);
     }
   }
 
   .closing &{
     @extend %fade;
     &.active{
-      opacity: 0.2;
-      @include scale(2);
+      //@include transition(all, 5s);
+      @include scale(1);
     }
   }
   .closed &{
     &.active{
-      opacity: 1;
-      @include scale(1);
     }
   }
 }

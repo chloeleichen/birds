@@ -9,14 +9,39 @@ img.loaded {
 
 img.loading {
   opacity: 0;
+  width: 100%;
 }
 
 img.loaded {
   opacity: 1;
 }
 
+body {
+  color: #bdc3c7;
+}
+
+a {
+  color: #ef5350;
+}
+a a:hover, a a:focus {
+  color: #f3817f;
+}
+
+body {
+  background: #212121;
+}
+
+.container {
+  min-height: 100vh;
+}
+
 .fix {
   overflow-y: hidden;
+}
+
+.all-birds-wrapper {
+  max-width: 30em;
+  margin: 0 auto;
 }
 
 .btn-close {
@@ -28,8 +53,6 @@ img.loaded {
   position: fixed;
   top: 0;
   left: 0;
-  overflow-x: hidden;
-  overflow-y: auto;
   width: 100%;
   height: 100%;
   -webkit-transform: translate3d(0, 0, 0);
@@ -55,15 +78,17 @@ img.loaded {
   transition: all, 1s;
   line-height: 1;
   height: 29.412vw;
-  background: #fff;
 }
 .bird-card-wrapper .bird-info {
   -moz-transition: all, 1s;
   -o-transition: all, 1s;
   -webkit-transition: all, 1s;
   transition: all, 1s;
-  background: #fff;
+  background: #000;
   z-index: 100;
+}
+.opening .bird-card-wrapper {
+  overflow: hidden;
 }
 .opening .bird-card-wrapper .bird-hero {
   -moz-transform: translate(0, -100%);
@@ -79,6 +104,10 @@ img.loaded {
   -webkit-transform: translate(0, 100%);
   transform: translate(0, 100%);
 }
+.open .bird-card-wrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 .open .bird-card-wrapper .bird-hero {
   -moz-transform: translate(0, 0);
   -o-transform: translate(0, 0);
@@ -92,6 +121,9 @@ img.loaded {
   -ms-transform: translate(0, 0);
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
+}
+.closing .bird-card-wrapper {
+  overflow: hidden;
 }
 .closing .bird-card-wrapper .bird-hero {
   -moz-transform: translate(0, -100%);
@@ -108,22 +140,39 @@ img.loaded {
   transform: translate(0, 100%);
 }
 
+.bird-hero {
+  background: url("./../bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .bird-wrapper figure {
   position: relative;
   width: 100%;
   margin: 0;
-  height: auto;
+  background: url("./../ring.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc((100vw - 2em)*0.625);
+  max-height: 18.125em;
+  background-color: #3b3b3b;
+  cursor: pointer;
 }
-@media screen and (min-width: 40em) {
-  .bird-wrapper figure {
-    height: calc((100vw - 15px - 6em) * 0.2083 );
-  }
+.bird-wrapper figure img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -moz-transition: all, 0.1s;
+  -o-transition: all, 0.1s;
+  -webkit-transition: all, 0.1s;
+  transition: all, 0.1s;
 }
-@media screen and (min-width: 52em) {
-  .bird-wrapper figure {
-    height: calc((100vw - 15px - 6em) * 0.2083 );
-    max-height: 197px;
-  }
+.bird-wrapper figure img:hover, .bird-wrapper figure img:focus {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+.bird-wrapper .figcaption {
+  color: #9d9d9d;
 }
 
 .opening .bird-wrapper, .open .bird-wrapper, .closing .bird-wrapper {
@@ -132,47 +181,43 @@ img.loaded {
 .opening .active.bird-wrapper, .open .active.bird-wrapper, .closing .active.bird-wrapper {
   opacity: 1;
 }
-.opening .bird-wrapper figcaption, .open .bird-wrapper figcaption, .closing .bird-wrapper figcaption {
-  display: none;
+.opening .bird-wrapper .figcaption, .open .bird-wrapper .figcaption, .closing .bird-wrapper .figcaption {
+  opacity: 0;
 }
 
 .bird-wrapper {
   overflow: hidden;
-  -moz-transition: all, 0.1s;
-  -o-transition: all, 0.1s;
-  -webkit-transition: all, 0.1s;
-  transition: all, 0.1s;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
 }
-.opening .bird-wrapper.active {
+.bird-wrapper.active {
   -moz-transition: all, 1s;
   -o-transition: all, 1s;
   -webkit-transition: all, 1s;
   transition: all, 1s;
-  -moz-transform: scale(2);
-  -o-transform: scale(2);
-  -ms-transform: scale(2);
-  -webkit-transform: scale(2);
-  transform: scale(2);
-  opacity: 0.1;
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.opening .bird-wrapper.active {
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
 }
 .open .bird-wrapper.active {
-  opacity: 0;
-  -moz-transform: scale(2);
-  -o-transform: scale(2);
-  -ms-transform: scale(2);
-  -webkit-transform: scale(2);
-  transform: scale(2);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
 }
 .closing .bird-wrapper.active {
-  opacity: 0.2;
-  -moz-transform: scale(2);
-  -o-transform: scale(2);
-  -ms-transform: scale(2);
-  -webkit-transform: scale(2);
-  transform: scale(2);
-}
-.closed .bird-wrapper.active {
-  opacity: 1;
   -moz-transform: scale(1);
   -o-transform: scale(1);
   -ms-transform: scale(1);

@@ -2,6 +2,12 @@ $sm: 40em;
 $md: 52em;
 $lg: 64em;
 $delay: 1s;
+$dark: #212121;
+$grey: #9d9d9d;
+$darker: #000;
+$red: #ef5350;
+$red-lighter: lighten($red, 10%);
+$light: #bdc3c7;
 
 
 
@@ -71,7 +77,7 @@ $delay: 1s;
 
   img.loading{
     opacity: 0;
-
+    width: 100%;
   }
 
   img.loaded{

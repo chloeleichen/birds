@@ -50,7 +50,6 @@
       });
       var c = window.setTimeout(function(self){
         body.classList.remove("fix");
-        body.style.top = "0px";
         self.setState({
           activeBirdId: null,
           wrapperClass: "closed"
@@ -62,10 +61,6 @@
       //Get Active Bird
       var activeBird = this.state.data[this.state.activeBirdId];
       var outputInfo = null;
-      ///TO Be Deleted
-      var style ={
-        top: 0
-      }
       if(activeBird){
         outputInfo = <BirdInfo onClick = {this.handleClose} data={activeBird} />;
       } 
@@ -73,7 +68,7 @@
       return( 
         <div className={this.state.wrapperClass}>
             <div className="container bird-list-wrapper">
-              <ul className="p2 clearfix list-reset all-birds-wrapper ">
+              <ul className="p1 clearfix list-reset all-birds-wrapper ">
                   {this.state.data.map(function(bird, i) {
                   return (<BirdWrapper onClick={this.handleClick.bind(this, i)} key={i} active={i === this.state.activeBirdId ? 'active' : ''} data={bird} />);
                   }, this)}

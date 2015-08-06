@@ -20,6 +20,7 @@ var BirdInfo = React.createClass({
           <BirdImage src={src} alt = {this.props.data.commonName} />
           </div>
           <div className='p2 bird-info'>
+          <div className="container">
           <a className ="p2 block btn btn-close icon-cross" onClick = {this.handleClose}></a>
           <BirdTitle comName={this.props.data.commonName} sciName={this.props.data.scientificName}/>
           <BirdStats stats={this.props.data.stats} statsFor={this.props.data.statsFor}/>
@@ -28,6 +29,7 @@ var BirdInfo = React.createClass({
           <BirdThreats threats ={this.props.data.threats} />
           <BirdRecoveries recoveries ={this.props.data.recoveries}/>
           <div className='profile'> <a href={this.props.data.profile}>Profile</a> </div>
+          </div>
           </div>
           </div>
         );

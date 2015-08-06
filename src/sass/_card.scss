@@ -8,8 +8,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
     width: 100%;
     height: 100%;
     -webkit-transform: translate3d(0, 0, 0);
@@ -29,14 +27,14 @@
     @include transition(all, $delay);
     line-height: 1;
     height: 29.412vw;
-    background: #fff;
    }
    .bird-info{
     @include transition(all, $delay);
-    background: #fff;
+    background: $darker;
     z-index: 100;
    }
   .opening &{
+    overflow: hidden;
     .bird-hero{
       @include translate(0, -100%);
     }
@@ -46,6 +44,8 @@
   }
   .open &{
     @extend %fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
     
     .bird-hero{
       @include translate(0, 0);
@@ -55,6 +55,7 @@
     } 
   }
   .closing &{
+    overflow: hidden;
     @extend %fixed;
     .bird-hero{
       @include translate(0, -100%);
@@ -68,4 +69,10 @@
 
   }
 
+}
+
+.bird-hero{
+  background: url("./../bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
