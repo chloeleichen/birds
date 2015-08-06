@@ -84,7 +84,7 @@ body {
   -o-transition: all, 1s;
   -webkit-transition: all, 1s;
   transition: all, 1s;
-  background: #000;
+  background: #263238;
   z-index: 100;
 }
 .opening .bird-card-wrapper {
