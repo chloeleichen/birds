@@ -3,6 +3,8 @@ $md: 52em;
 $lg: 64em;
 $delay: 1s;
 
+
+
 @mixin transition($transition...) {
     -moz-transition:    $transition;
     -o-transition:      $transition;
@@ -31,6 +33,24 @@ $delay: 1s;
 // translate
 @mixin translate ($x, $y) {
    @include transform(translate($x, $y));
+}
+
+// rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+ 
+// scale
+@mixin scale($scale) {
+   @include transform(scale($scale));
+} 
+// translate
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+// skew
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
 }
 
 //Vertical align 

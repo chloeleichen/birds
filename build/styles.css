@@ -108,9 +108,6 @@ img.loaded {
   transform: translate(0, 100%);
 }
 
-.bird-wrapper.active {
-  color: red;
-}
 .bird-wrapper figure {
   position: relative;
   width: 100%;
@@ -127,4 +124,58 @@ img.loaded {
     height: calc((100vw - 15px - 6em) * 0.2083 );
     max-height: 197px;
   }
+}
+
+.opening .bird-wrapper, .open .bird-wrapper, .closing .bird-wrapper {
+  opacity: 0;
+}
+.opening .active.bird-wrapper, .open .active.bird-wrapper, .closing .active.bird-wrapper {
+  opacity: 1;
+}
+.opening .bird-wrapper figcaption, .open .bird-wrapper figcaption, .closing .bird-wrapper figcaption {
+  display: none;
+}
+
+.bird-wrapper {
+  overflow: hidden;
+  -moz-transition: all, 0.1s;
+  -o-transition: all, 0.1s;
+  -webkit-transition: all, 0.1s;
+  transition: all, 0.1s;
+}
+.opening .bird-wrapper.active {
+  -moz-transition: all, 1s;
+  -o-transition: all, 1s;
+  -webkit-transition: all, 1s;
+  transition: all, 1s;
+  -moz-transform: scale(2);
+  -o-transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  opacity: 0.1;
+}
+.open .bird-wrapper.active {
+  opacity: 0;
+  -moz-transform: scale(2);
+  -o-transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+.closing .bird-wrapper.active {
+  opacity: 0.2;
+  -moz-transform: scale(2);
+  -o-transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+.closed .bird-wrapper.active {
+  opacity: 1;
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }

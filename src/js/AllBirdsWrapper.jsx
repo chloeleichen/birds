@@ -40,7 +40,7 @@
         self.setState({
           wrapperClass:'open'
         });
-      }, 1000, this);
+      }, 1200, this);
 
     },
 
@@ -55,7 +55,7 @@
           activeBirdId: null,
           wrapperClass: "closed"
         });
-      }, 1000, this);
+      }, 1200, this);
     },
 
     render: function(){

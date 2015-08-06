@@ -1,8 +1,5 @@
+//Sizes 
 .bird-wrapper{
-  &.active{
-    color: red;
-  }
-
   figure{
     position: relative;
     width: 100%;
@@ -24,4 +21,54 @@
     // }
     }
   }
+
+%fade{
+  opacity: 0;
+    &.active{
+      opacity: 1;
+    }
+  figcaption{
+    display: none;
+  }
+}
+
+//State 
+.bird-wrapper{
+  overflow: hidden;
+  @include transition(all, 0.1s);
+  &.active{
+      //border-radius: 0;
+    }
+   
+  .opening &{
+    @extend %fade;
+    &.active{
+      @include transition(all, $delay);
+      @include scale(2);
+      opacity: 0.1;
+    }
+  }
+  .open &{
+    @extend %fade;
+      &.active{
+      opacity: 0;
+      @include scale(2);
+    }
+  }
+
+  .closing &{
+    @extend %fade;
+    &.active{
+      opacity: 0.2;
+      @include scale(2);
+    }
+  }
+  .closed &{
+    &.active{
+      opacity: 1;
+      @include scale(1);
+    }
+  }
+}
+
 
