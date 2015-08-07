@@ -196,8 +196,33 @@ body {
 }
 .stats .number {
   font-size: 4em;
+  -webkit-animation-name: example;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 7s;
+  /* Chrome, Safari, Opera */
+  animation-name: example;
+  animation-duration: 7s;
+  color: #ef5350;
 }
 
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+  from {
+    color: #fff;
+  }
+  to {
+    color: #ef5350;
+  }
+}
+/* Standard syntax */
+@keyframes example {
+  from {
+    color: #fff;
+  }
+  to {
+    color: #ef5350;
+  }
+}
 .bird-wrapper {
   cursor: pointer;
   color: #9d9d9d;

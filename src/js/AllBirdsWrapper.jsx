@@ -55,7 +55,6 @@
         });
       }, 1200, this);
     },
-    
     render: function(){
       //Get Active Bird
       var activeBird = this.state.data[this.state.activeBirdId];

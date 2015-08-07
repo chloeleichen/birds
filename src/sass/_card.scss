@@ -106,13 +106,33 @@
   }
 }
 
+
 .stats{
   text-align: center;
   margin: 3em auto;
 
   .number{
     font-size: 4em;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 7s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 7s;
+    color: $red;
+
   }
 }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    from {color: #fff;}
+    to {color: $red;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {color: #fff;}
+    to {color: $red;}
+}
+
 
 
