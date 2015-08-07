@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Marck+Script);
+@import url(http://fonts.googleapis.com/css?family=Viga);
 img.loaded {
   width: 100%;
   height: auto;
@@ -18,6 +21,7 @@ img.loaded {
 
 body {
   color: #bdc3c7;
+  font-family: "Viga", sans-serif;
 }
 
 a {
@@ -27,11 +31,25 @@ a a:hover, a a:focus {
   color: #f3817f;
 }
 
+h1, h2, h3 {
+  font-family: "Viga", sans-serif;
+  font-weight: 700;
+}
+
+.sci-name {
+  font-family: "Marck Script", cursive;
+  font-size: 1.5em;
+}
+
+label {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
 body {
   background: #212121;
 }
 
-.container {
+#content {
   min-height: 100vh;
 }
 
@@ -78,13 +96,20 @@ body {
   transition: all, 1s;
   line-height: 1;
   height: 29.412vw;
+  background: url("./../birds.png");
+}
+.bird-card-wrapper .bird-hero img {
+  height: 29.412vw;
+  width: auto;
+  max-width: 100%;
+  overflow: hidden;
 }
 .bird-card-wrapper .bird-info {
   -moz-transition: all, 1s;
   -o-transition: all, 1s;
   -webkit-transition: all, 1s;
   transition: all, 1s;
-  background: #263238;
+  background: #1b1b1b;
   z-index: 100;
 }
 .opening .bird-card-wrapper {
@@ -139,13 +164,48 @@ body {
   -webkit-transform: translate(0, 100%);
   transform: translate(0, 100%);
 }
-
-.bird-hero {
-  background: url("./../bird.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+.bird-card-wrapper canvas {
+  width: 100% !important;
+  height: auto !important;
 }
 
+.status {
+  margin-bottom: 0.5em;
+}
+.status label {
+  font-size: 0.8em;
+}
+@media screen and (min-width: 40em) {
+  .status {
+    text-align: right;
+    margin-top: 4.5em;
+  }
+}
+.status .critically-endangered {
+  color: #e74c3c;
+  font-size: 1.2em;
+}
+.status .endangered {
+  color: #d35400;
+  font-size: 1.2em;
+}
+
+.stats {
+  text-align: center;
+  margin: 3em auto;
+}
+.stats .number {
+  font-size: 4em;
+}
+
+.bird-wrapper {
+  cursor: pointer;
+  color: #9d9d9d;
+  -moz-transition: all, 0.1s;
+  -o-transition: all, 0.1s;
+  -webkit-transition: all, 0.1s;
+  transition: all, 0.1s;
+}
 .bird-wrapper figure {
   position: relative;
   width: 100%;
@@ -157,22 +217,21 @@ body {
   height: calc((100vw - 2em)*0.625);
   max-height: 18.125em;
   background-color: #3b3b3b;
-  cursor: pointer;
 }
 .bird-wrapper figure img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  -moz-transition: all, 0.1s;
-  -o-transition: all, 0.1s;
-  -webkit-transition: all, 0.1s;
-  transition: all, 0.1s;
 }
-.bird-wrapper figure img:hover, .bird-wrapper figure img:focus {
+.bird-wrapper h3 {
+  margin-top: 0.5em;
+  text-transform: uppercase;
+}
+.bird-wrapper:hover, .bird-wrapper:focus {
+  color: #ef5350;
+}
+.bird-wrapper:hover img, .bird-wrapper:focus img {
   filter: grayscale(0);
   -webkit-filter: grayscale(0);
-}
-.bird-wrapper .figcaption {
-  color: #9d9d9d;
 }
 
 .opening .bird-wrapper, .open .bird-wrapper, .closing .bird-wrapper {

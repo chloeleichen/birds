@@ -18,7 +18,7 @@ var chartOptions ={
     scaleLineColor: "rgba(255,255,255,.4)",
     angleLineWidth : 1,
     responsive: true,
-    pointLabelFontFamily : "'inherit'",
+    pointLabelFontFamily : "'Trebuchet MS', sans-serif",
     pointLabelFontStyle : "normal",
     pointLabelFontSize : 10,
     pointLabelFontColor : "#bdc3c7",
@@ -31,7 +31,7 @@ var chartOptions ={
     datasetFill : true,
     tooltipTemplate:"<%=label%>",
     tooltipFillColor: "rgba(0,0,0,0.8)",
-    tooltipFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+    tooltipFontFamily: "'Trebuchet MS', sans-serif",
     legendTemplate : ""
 
 }
@@ -53,7 +53,7 @@ render: function(){
           }
         ]
     };
-    return <RadarChart data={chartData} options={chartOptions}/>;
+    return (<div className="threats clearfix"> <RadarChart data={chartData} options={chartOptions}/></div>);
   }
 });
 

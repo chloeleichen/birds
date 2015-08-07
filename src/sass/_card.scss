@@ -20,6 +20,7 @@
    overflow: hidden;
 }
 
+
 .bird-card-wrapper{
    @extend %absolute;
    @include transition(all, $delay);
@@ -27,6 +28,13 @@
     @include transition(all, $delay);
     line-height: 1;
     height: 29.412vw;
+    background: url("./../birds.png");
+    img{
+      height: 29.412vw;
+      width: auto;
+      max-width: 100%;
+      overflow: hidden;
+    }
    }
    .bird-info{
     @include transition(all, $delay);
@@ -69,10 +77,42 @@
 
   }
 
+  canvas{
+    width: 100% !important;
+    height: auto !important;
+  }
+
 }
 
-.bird-hero{
-  background: url("./../bird.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+
+.status{
+  margin-bottom:0.5em;
+  label{
+    font-size: 0.8em;
+  }
+  @media screen and (min-width: $sm){
+    text-align: right;
+    margin-top: 4.5em;
+
+  }
+  .critically-endangered{
+  color: $critically-endangered;
+  font-size: 1.2em;
+  }
+
+  .endangered{
+    color: $endangered;
+    font-size: 1.2em;
+  }
 }
+
+.stats{
+  text-align: center;
+  margin: 3em auto;
+
+  .number{
+    font-size: 4em;
+  }
+}
+
+

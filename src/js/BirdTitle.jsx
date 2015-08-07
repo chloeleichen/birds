@@ -1,7 +1,7 @@
   var BirdTitle = React.createClass({
     render: function(){
-      return (<div className='title'>
-        <h4>{this.props.sciName}</h4>
+      return (<div className='title sm-col sm-col-6'>
+        <div className="sci-name">{this.props.sciName}</div>
         <h1>{this.props.comName}</h1>
         </div>
         ) ;

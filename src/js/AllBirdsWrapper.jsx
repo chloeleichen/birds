@@ -41,7 +41,6 @@
           wrapperClass:'open'
         });
       }, 1200, this);
-
     },
 
     close: function(){
@@ -56,7 +55,7 @@
         });
       }, 1200, this);
     },
-
+    
     render: function(){
       //Get Active Bird
       var activeBird = this.state.data[this.state.activeBirdId];
@@ -67,18 +66,18 @@
 
       return( 
         <div className={this.state.wrapperClass}>
-            <div className="container bird-list-wrapper">
-              <ul className="p1 clearfix list-reset all-birds-wrapper ">
-                  {this.state.data.map(function(bird, i) {
-                  return (<BirdWrapper onClick={this.handleClick.bind(this, i)} key={i} active={i === this.state.activeBirdId ? 'active' : ''} data={bird} />);
-                  }, this)}
-              </ul>
-            </div>
-            <div className ="bird-card-wrapper">
-            {outputInfo}
-            </div>
-          </div>
-          );
+        <div className="container bird-list-wrapper">
+        <ul className="p1 clearfix list-reset all-birds-wrapper ">
+           {this.state.data.map(function(bird, i) {
+            return (<BirdWrapper onClick={this.handleClick.bind(this, i)} key={i} active={i === this.state.activeBirdId ? 'active' : ''} data={bird} />);
+           }, this)}
+        </ul>
+        </div>
+        <div className ="bird-card-wrapper">
+        {outputInfo}
+        </div>
+        </div>
+        );
       }
   });
 

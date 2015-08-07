@@ -136,3 +136,9 @@ Tristan Albatross (Diomedea exulans exulans)
 [Intro Image](https://flic.kr/p/6aFUqB) by [Chantal Steyn](https://www.flickr.com/photos/chantal_steyn/)
 
 [High Res](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Diomedea_exulans_in_flight_-_SE_Tasmania.jpg/440px-Diomedea_exulans_in_flight_-_SE_Tasmania.jpg)
+
+## Other source of info 
+[Atrichornis rufescens](http://www.environment.gov.au/biodiversity/threatened/species/pubs/655-conservation-advice.pdf)
+[Population Status and Threats to Albatrosses and Giant
+Petrels Listed as Threatened under the Environment
+Protection and Biodiversity Conservation Act 1999](http://www.antarctica.gov.au/__data/assets/pdf_file/0019/40636/Albatross-Background-Paper-FINAL.pdf)

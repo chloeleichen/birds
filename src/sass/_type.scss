@@ -1,9 +1,24 @@
 body{
   color: $light;
+  font-family: $open;
 }
 a{
   color: $red;
   a:hover, a:focus{
     color: $red-lighter;
   }
+}
+
+h1, h2, h3{
+  font-family: $open;
+  font-weight: 700;
+}
+
+.sci-name{
+  font-family: $script;
+  font-size: 1.5em;
+}
+
+label{
+  font-family: $normal;
 }

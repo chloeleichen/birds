@@ -1,13 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Marck+Script);
+@import url(http://fonts.googleapis.com/css?family=Viga);
+
 $sm: 40em;
 $md: 52em;
 $lg: 64em;
 $delay: 1s;
 $dark: #212121;
 $grey: #9d9d9d;
-$darker: #263238;
+$darker: #1b1b1b;
 $red: #ef5350;
 $red-lighter: lighten($red, 10%);
 $light: #bdc3c7;
+$critically-endangered: #e74c3c;
+$endangered:#d35400;
+$vulnerable:#e67e22;
+
+$open:'Viga', sans-serif;
+$script:'Marck Script', cursive;
+$normal: "Trebuchet MS", Helvetica, sans-serif;
 
 
 

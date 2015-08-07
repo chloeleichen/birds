@@ -1,5 +1,8 @@
 //Sizes 
 .bird-wrapper{
+  cursor: pointer;
+  color: $grey;
+  @include transition(all, 0.1s);
   figure{
     position: relative;
     width: 100%;
@@ -11,21 +14,23 @@
     height: calc((100vw - 2em)*0.625);
     max-height: 18.125em;
     background-color: lighten($dark, 10%);
-    cursor: pointer;
-
     img{
       -webkit-filter: grayscale(100%); 
       filter: grayscale(100%);
-      @include transition(all, 0.1s);
-      &:hover, &:focus{
-        filter: grayscale(0);
-        -webkit-filter: grayscale(0);
-        }
       }
     }
-    .figcaption{
-      color: $grey;
+    h3{
+      margin-top: 0.5em;
+      text-transform: uppercase;
     }
+
+    &:hover, &:focus{
+      color: $red;
+      img{
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+      }
+     }
   }
 
 %fade{
