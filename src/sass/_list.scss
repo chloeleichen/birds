@@ -15,7 +15,7 @@
 .bird-wrapper{
   cursor: pointer;
   color: $grey;
-  @include transition(all, 0.1s);
+  @include transition(all, 0.1s, ease-out);
   figure{
     position: relative;
     width: 100%;

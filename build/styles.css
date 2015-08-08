@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 @import url(http://fonts.googleapis.com/css?family=Marck+Script);
 @import url(http://fonts.googleapis.com/css?family=Viga);
 img.loaded {
@@ -48,6 +47,9 @@ label {
 body {
   background: #212121;
 }
+body header {
+  height: 100vh;
+}
 
 #content {
   min-height: 100vh;
@@ -55,11 +57,41 @@ body {
 
 .fix {
   overflow-y: hidden;
+  padding-right: 1em;
 }
 
 .all-birds-wrapper {
   max-width: 30em;
   margin: 0 auto;
+}
+
+header {
+  background-image: url("./../bg-mobile.jpg");
+  background-size: cover;
+  position: relative;
+}
+header h1 {
+  margin: 0;
+  padding: 40vh 0.5em;
+}
+header .tilt {
+  display: none;
+}
+@media screen and (min-width: 40em) {
+  header .tilt {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  header .tilt-inner {
+    width: 100%;
+    height: 100%;
+    background-image: url("./../bg.jpg");
+    background-size: cover;
+  }
 }
 
 .status {
@@ -288,10 +320,10 @@ canvas {
 .bird-wrapper {
   cursor: pointer;
   color: #9d9d9d;
-  -moz-transition: all, 0.1s;
-  -o-transition: all, 0.1s;
-  -webkit-transition: all, 0.1s;
-  transition: all, 0.1s;
+  -moz-transition: all, 0.1s, ease-out;
+  -o-transition: all, 0.1s, ease-out;
+  -webkit-transition: all, 0.1s, ease-out;
+  transition: all, 0.1s, ease-out;
 }
 .bird-wrapper figure {
   position: relative;

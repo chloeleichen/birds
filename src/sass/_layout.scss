@@ -1,5 +1,14 @@
 body{
   background: #212121;
+  header{
+    height: 100vh;
+  }
+
+  // &.ready{
+  //   header{
+  //     height: 2em;
+  //   }
+  // }
 }
 
 #content{
@@ -8,6 +17,7 @@ body{
 
 .fix{
   overflow-y: hidden;
+  padding-right: 1em;
 }
 
 .all-birds-wrapper{

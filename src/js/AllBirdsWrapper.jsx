@@ -1,12 +1,24 @@
  'use strict';
-
-
-
-
   var BirdWrapper = require('./BirdWrapper.jsx');
   var BirdInfo = require('./BirdInfo.jsx');
+  var activeEl, transitionEvent, birds, birdImg;
 
   var AllBirdsWrapper = React.createClass({
+    whichTransitionEvent: function(el){
+          var t;
+          var transitions = {
+            'transition':'transitionend',
+            'OTransition':'oTransitionEnd',
+            'MozTransition':'transitionend',
+            'WebkitTransition':'webkitTransitionEnd'
+          }
+          for(t in transitions){
+              if( el.style[t] !== undefined ){
+                  return transitions[t];
+              }
+          }
+    },
+
     getInitialState: function() {
     return {
       data: [],
@@ -26,66 +38,62 @@
     },
 
     componentDidMount:function(){
-      var l = setTimeout(function(){
-        body.classList.add("ready");
-      }, 0);
+      birds = this.refs.birds;
+      this.el = React.findDOMNode(birds);
+    },
+
+    componentDidUpdate: function(){
+      if(!body.classList.contains("ready")){
+        birdImg = this.el.getElementsByTagName("img");
+          if(birdImg.length == 19){
+            body.classList.add("ready");
+            console.log("ready");
+          }
+      }
     },
 
     handleClose: function(){
-      this.close();
+      this.setState({
+        wrapperClass:'closing'
+      });
+
+      activeEl = this.el.querySelector('.active');
+      transitionEvent = this.whichTransitionEvent(activeEl);
+      transitionEvent && activeEl.addEventListener(transitionEvent, this.listenerClose);
     },
 
     handleClick: function (i) {
-      this.open(i);
-    },
-
-    open: function(i){
       this.setState({
         activeBirdId: i,
         wrapperClass:'opening',
       });
       body.classList.add("fix");
-
-      var o = window.setTimeout(function (self) {
-        self.setState({
-          wrapperClass:'open'
-        });
-      }, 1500, this);
+      activeEl = this.el.getElementsByTagName('li')[i]
+      transitionEvent = this.whichTransitionEvent(activeEl);
+      transitionEvent && activeEl.addEventListener(transitionEvent, this.listenerOpen);
     },
 
-    close: function(){
-      this.setState({
-        wrapperClass:'closing'
-      });
-      var c = window.setTimeout(function(self){
-        body.classList.remove("fix");
-        self.setState({
-          activeBirdId: null,
-          wrapperClass: "closed"
-        });
-      }, 1500, this);
-       /* From Modernizr */
-function whichTransitionEvent(){
-    var t;
-    var el = document.querySelector('.active');
-    var transitions = {
-      'transition':'transitionend',
-      'OTransition':'oTransitionEnd',
-      'MozTransition':'transitionend',
-      'WebkitTransition':'webkitTransitionEnd'
-    }
+    //seperate for better readability 
+    listenerOpen: function (event){
+      if((event.propertyName === "transform") || (event.propertyName === "-ms-transform" )||(event.propertyName === "-webkit-transform")){
+              this.setState({
+              wrapperClass: "open"
+            });
+        event.target.removeEventListener(event.type, this.listenerOpen);
+          }
+    },
 
-    for(t in transitions){
-        if( el.style[t] !== undefined ){
-            return transitions[t];
+    listenerClose: function (event){
+      if((event.propertyName === "transform") || (event.propertyName === "-ms-transform" )||(event.propertyName === "-webkit-transform")){
+          body.classList.remove("fix");
+          this.setState({
+            wrapperClass: "closed",
+            activeBirdId: null
+          });
+        event.target.removeEventListener(event.type, this.listenerClose);
         }
-    }
-}
-      var transitionEvent = whichTransitionEvent();
-        transitionEvent && el.addEventListener(transitionEvent, function() {
-          alert("finished");
-        });
     },
+
     render: function(){
       //Get Active Bird
       var activeBird = this.state.data[this.state.activeBirdId];
@@ -97,9 +105,9 @@ function whichTransitionEvent(){
       return( 
         <div className={this.state.wrapperClass}>
         <div className="container bird-list-wrapper">
-        <ul className="p1 clearfix list-reset all-birds-wrapper ">
+        <ul className="p1 clearfix list-reset all-birds-wrapper" ref='birds'>
            {this.state.data.map(function(bird, i) {
-            return (<BirdWrapper onClick={this.handleClick.bind(this, i)} key={i} active={i === this.state.activeBirdId ? 'active' : ''} data={bird} />);
+            return (<BirdWrapper onClick={this.handleClick.bind(this, i)} key={i} active={i === this.state.activeBirdId ? 'active' : null } data={bird}/>);
            }, this)}
         </ul>
         </div>
