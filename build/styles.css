@@ -132,6 +132,9 @@ header #start .start {
 header #start:disabled {
   display: none;
 }
+header i.home {
+  font-size: 2em;
+}
 
 body.front header {
   background-image: url("./../bg-mobile.jpg");
