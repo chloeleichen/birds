@@ -27,6 +27,7 @@
     height: calc((100vw - 3em)*0.625);
     max-height: 18.125em;
     background-color: lighten($dark, 10%);
+    overflow: hidden;
     img{
       -webkit-filter: grayscale(100%); 
       filter: grayscale(100%);

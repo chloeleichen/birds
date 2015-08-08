@@ -6,7 +6,8 @@ var gulp  = require('gulp'),
     reactify = require('reactify'),
     sass  = require('gulp-ruby-sass'),
     watch = require('gulp-watch'),
-    watchify = require('watchify');
+    watchify = require('watchify'),
+    uglify = require('gulp-uglify');
 
 var path = {
   BUILD: './build',
@@ -42,6 +43,12 @@ gulp.task('js', function() {
         })
       .pipe(source(path.OUT))
       .pipe(gulp.dest(path.BUILD));
+});
+
+gulp.task('compress', function() {
+  return gulp.src('./build/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('./build/mini'));
 });
 
 gulp.task('watch', function(){

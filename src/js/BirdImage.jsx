@@ -1,3 +1,4 @@
+'use strict';
 var BirdImage = React.createClass({
   getInitialState: function() {
     return {
@@ -10,7 +11,7 @@ var BirdImage = React.createClass({
     var img = document.createElement('img');
     img.onload = function(){
       self.setState({ loaded: true});
-    }
+    };
     img.src = this.props.src;
   },
 

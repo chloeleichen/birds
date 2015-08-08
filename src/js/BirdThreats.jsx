@@ -18,7 +18,7 @@ var chartOptions ={
     scaleLineColor: "rgba(255,255,255,.4)",
     angleLineWidth : 1,
     responsive: true,
-    pointLabelFontFamily : "'Trebuchet MS', sans-serif",
+    pointLabelFontFamily : "'Viga', sans-serif",
     pointLabelFontStyle : "normal",
     pointLabelFontSize : 10,
     pointLabelFontColor : "#bdc3c7",
@@ -31,10 +31,9 @@ var chartOptions ={
     datasetFill : true,
     tooltipTemplate:"<%=label%>",
     tooltipFillColor: "rgba(0,0,0,0.8)",
-    tooltipFontFamily: "'Trebuchet MS', sans-serif",
+    tooltipFontFamily: "'Viga', sans-serif",
     legendTemplate : ""
-
-}
+};
 
 var BirdThreats = React.createClass({
 render: function(){
@@ -53,7 +52,7 @@ render: function(){
           }
         ]
     };
-    return (<div className="threats clearfix"> <RadarChart data={chartData} options={chartOptions}/></div>);
+    return (<div className="threats clearfix"> <label className="meta block center"> Threats </label><RadarChart data={chartData} options={chartOptions}/></div>);
   }
 });
 

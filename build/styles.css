@@ -41,20 +41,20 @@ h1, h2, h3 {
 }
 
 label {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: "Viga", Helvetica, sans-serif;
 }
 
 body {
   background: #212121;
   overflow-x: hidden;
+  background-image: url("./../pattern.png");
 }
 body.front {
   overflow: hidden;
-  max-height: 100vh;
-}
-body.front header {
   height: 100vh;
-  overflow: hidden;
+}
+body.front #main {
+  display: none;
 }
 
 #content {
@@ -63,7 +63,12 @@ body.front header {
 
 .fix {
   overflow-y: hidden;
-  padding-right: 1em;
+  padding-right: 0;
+}
+@media screen and (min-width: 40em) {
+  .fix {
+    padding-right: 1em;
+  }
 }
 
 .all-birds-wrapper {
@@ -71,25 +76,94 @@ body.front header {
   margin: 0 auto;
 }
 
+header #start:focus, header #start:hover, header #start:active {
+  -webkit-tap-highlight-color: transparent !important;
+  outline: 0 !important;
+  outline: none !important;
+  box-shadow: none;
+}
+
 header {
-  background-image: url("./../bg-mobile.jpg");
-  background-size: cover;
   position: relative;
+  background-image: url("./../bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 5em;
+  width: 5em;
+  top: 1em;
+  transform: scale3d(0.8, 0.8, 1);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  margin: 0 auto;
+  -moz-transition: all, 1s;
+  -o-transition: all, 1s;
+  -webkit-transition: all, 1s;
+  transition: all, 1s;
 }
 header h1 {
-  margin: 0;
-  padding: 40vh 0.5em;
-}
-header .tilt {
   display: none;
 }
 @media screen and (min-width: 40em) {
   header {
+    background-image: url("./../bg.jpg");
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-size: cover;
+  }
+}
+header #start {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  color: #ef5350;
+  font-size: 1em;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+header #start .start {
+  display: none;
+}
+header #start:disabled {
+  display: none;
+}
+
+body.front header {
+  background-image: url("./../bg-mobile.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  transform: scale3d(1, 1, 1);
+  border-radius: 0;
+  top: 0;
+}
+body.front header #start {
+  width: 100%;
+  height: auto;
+}
+body.front header #start .start {
+  display: inline-block;
+  color: #bdc3c7;
+  border: 1px solid #bdc3c7;
+}
+body.front header h1 {
+  display: block;
+  margin: 0;
+  padding: 25vh 0.5em;
+}
+body.front header .tilt {
+  display: none;
+}
+@media screen and (min-width: 40em) {
+  body.front header {
     background-image: none;
   }
-  header .tilt {
+  body.front header .tilt {
     display: block;
     position: absolute;
     top: 0;
@@ -98,7 +172,7 @@ header .tilt {
     height: 100%;
     z-index: -1;
   }
-  header .tilt-inner {
+  body.front header .tilt-inner {
     position: absolute;
     top: 0;
     left: 0;
@@ -109,7 +183,7 @@ header .tilt {
     backface-visibility: hidden;
     background-size: cover;
   }
-  header .tilt-back, header .tilt-front {
+  body.front header .tilt-back, body.front header .tilt-front {
     opacity: 0.2;
     -moz-transition: opacity, 0.5s;
     -o-transition: opacity, 0.5s;
@@ -127,8 +201,15 @@ header .tilt {
     -webkit-transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
     transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
   }
-  header .tilt-mover {
+  body.front header .tilt-back {
+    z-index: -15;
+  }
+  body.front header .tilt-front {
+    z-index: -9;
+  }
+  body.front header .tilt-mover {
     opacity: 0.6;
+    z-index: -10;
     -moz-transition: transform, 0.5s;
     -o-transition: transform, 0.5s;
     -webkit-transition: transform, 0.5s;
@@ -136,11 +217,26 @@ header .tilt {
   }
 }
 
+.front-loader {
+  background-image: url("./../ellipsis.svg");
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+}
+.ready .front-loader {
+  display: none;
+}
+
 .status {
   margin-bottom: 0.5em;
 }
 .status label {
   font-size: 0.8em;
+  width: 5em;
+  display: inline-block;
+  padding-right: 0.5em;
+  line-height: 0.8;
 }
 @media screen and (min-width: 40em) {
   .status {
@@ -249,6 +345,10 @@ header .tilt {
 canvas {
   width: 100% !important;
   height: auto !important;
+}
+
+.threats label {
+  margin-bottom: 2em;
 }
 
 .open .bird-card-wrapper, .closing .bird-card-wrapper {
@@ -378,6 +478,7 @@ canvas {
   height: calc((100vw - 3em)*0.625);
   max-height: 18.125em;
   background-color: #3b3b3b;
+  overflow: hidden;
 }
 .bird-wrapper figure img {
   -webkit-filter: grayscale(100%);

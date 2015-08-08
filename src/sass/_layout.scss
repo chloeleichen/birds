@@ -1,25 +1,14 @@
 body{
   background: #212121;
   overflow-x: hidden;
-  // header{
-  //   max-height: 2em;
-  //   @include transition(all, 2s);
-  // }
+  background-image: url("./../pattern.png");
   &.front{
     overflow: hidden;
-    max-height: 100vh;
-    header{
     height: 100vh;
-    overflow: hidden;
+    #main{
+      display: none;
     }
   }
-  
-
-  // &.ready{
-  //   header{
-  //     height: 2em;
-  //   }
-  // }
 }
 
 #content{
@@ -28,7 +17,10 @@ body{
 
 .fix{
   overflow-y: hidden;
-  padding-right: 1em;
+  padding-right: 0;
+  @media screen and (min-width: $sm){
+    padding-right: 1em;
+  }
 }
 
 .all-birds-wrapper{

@@ -8,7 +8,7 @@
       return (
         <div className ='status sm-col sm-col-6'>
         <div className='cmStatus'>
-          <label>Commonwealth </label> 
+          <label>National </label> 
           <span className={transform(this.props.cmStatus)}>{this.props.cmStatus}</span>
         </div>
         <div className = 'nswStatus'>

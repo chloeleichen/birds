@@ -12,7 +12,7 @@
             'OTransition':'oTransitionEnd',
             'MozTransition':'transitionend',
             'WebkitTransition':'webkitTransitionEnd'
-          }
+          };
           for(t in transitions){
               if( el.style[t] !== undefined ){
                   return transitions[t];
@@ -60,7 +60,9 @@
 
       activeEl = this.el.querySelector('.active');
       transitionEvent = this.whichTransitionEvent(activeEl);
-      transitionEvent && activeEl.addEventListener(transitionEvent, this.listenerClose);
+      if(transitionEvent){
+        activeEl.addEventListener(transitionEvent, this.listenerClose);
+      } 
     },
 
     handleClick: function (i) {
@@ -69,9 +71,11 @@
         wrapperClass:'opening',
       });
       body.classList.add("fix");
-      activeEl = this.el.getElementsByTagName('li')[i]
+      activeEl = this.el.getElementsByTagName('li')[i];
       transitionEvent = this.whichTransitionEvent(activeEl);
-      transitionEvent && activeEl.addEventListener(transitionEvent, this.listenerOpen);
+      if(transitionEvent){
+        activeEl.addEventListener(transitionEvent, this.listenerOpen);
+      }
     },
 
     //seperate for better readability 
@@ -101,7 +105,7 @@
       var outputInfo = null;
       if(activeBird){
         outputInfo = <BirdInfo onClick = {this.handleClose} data={activeBird} />;
-      } 
+      };
 
       return( 
         <div className={this.state.wrapperClass}>
