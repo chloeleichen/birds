@@ -13,8 +13,6 @@ Black-eared Miner(Manorina melanotis)
 
 [Intro Image](https://flic.kr/p/8LkeCd) by [Planettrekker](https://www.flickr.com/photos/planettrekker/)
 
-[High Res]() by [?]()
-
 
 Eastern Bristlebird (Dasyornis brachypterus)
 
@@ -30,16 +28,12 @@ Rufous Scrub-bird(Atrichornis rufescens)
 
 Swift Parrot (Lathamus discolor) 
 
-[Intro Image](https://flic.kr/p/8B7f6P) by [Julian Robinson](https://www.flickr.com/photos/ozjulian/)
-
 [High Res](https://flic.kr/p/4Hqysg) by [Tobias Hayashi](https://www.flickr.com/photos/callocephalon/)
 
 
 Australasian Bittern (Botaurus poiciloptilus)
 
 [High Res](https://flic.kr/p/ormTq2) by [David Cook](https://www.flickr.com/photos/frankzed/) CC 2.0
-
-[High Res](https://flic.kr/p/4drLVQ) by [Richard Crook](https://www.flickr.com/photos/richardwc/) CC 2.0
 
 
 Southern Giant Petrel (Macronectes giganteus)
@@ -51,14 +45,11 @@ Southern Giant Petrel (Macronectes giganteus)
 
 Star Finch (eastern), Star Finch (southern)(Neochmia ruficauda ruficauda)
 
-[Intro Image](https://flic.kr/p/8Qn9jB) by [David Cook](https://www.flickr.com/photos/kookr/) CC 2.0
-
-[High Res](https://flic.kr/p/uByw92) by [Jim Bendon](https://www.flickr.com/photos/jim_bendon_1957/) CC 2.0
+[Image](https://flic.kr/p/uByw92) by [Jim Bendon](https://www.flickr.com/photos/jim_bendon_1957/) CC 2.0
 
 
 Gould's Petrel(Pterodroma leucoptera leucoptera)
 
-[Intro Image](https://upload.wikimedia.org/wikipedia/commons/3/35/Gould%27s_Petrel-off_Southport_Qld-15April2012.jpg)by Wikipedia
 
 [High Res](https://flic.kr/p/dN1mWz) by [Todd Burrows](https://www.flickr.com/photos/toddburrows/)
 
@@ -72,21 +63,17 @@ Night Parrot(Pezoporus occidentalis):
 
 Mallee Emu-wren (Stipiturus mallee)
 
-[Intro Image](https://flic.kr/p/diYjwY) by [Ron Knight](https://www.flickr.com/photos/sussexbirder/)
+[Image](https://flic.kr/p/diYjwY) by [Ron Knight](https://www.flickr.com/photos/sussexbirder/)
 
-[High Res](https://flic.kr/p/4b9JJc) by (Tony Morris)(https://www.flickr.com/photos/tonymorris/) CC 2.0
 
 
 Coxen's Fig-Parrot (Cyclopsitta diophthalma coxeni)
 
-[Intro Image](https://upload.wikimedia.org/wikipedia/commons/5/5e/Cyclopsitta_diophthalma_-Mossman_Gorge,_Daintree_National_Park,_Queensland,_Australia_-male-8.jpg)
 
 [High Res](https://upload.wikimedia.org/wikipedia/commons/b/b3/Cyclopsitta_diophthalma_-Birdworld_Kuranda%2C_Queensland%2C_Australia_-male-8a.jpg)
 
 
 Black-throated Finch (southern) (Poephila cincta cincta)
-
-[High Res](https://en.wikipedia.org/wiki/Black-throated_finch#/media/File:Poephila_cincta_-Baltimore_Aquarium,_Baltimore,_Maryland,_USA-8a.jpg) by Wikipedia
 
 [Intro Image](https://flic.kr/p/9qfMzH) by [Aunty Marsy](https://www.flickr.com/photos/auntymarsy/)
 
@@ -114,7 +101,7 @@ Australian Painted Snipe (Rostratula australis)
 
 [Intro Image](https://flic.kr/p/dQDDLd) by [Patrick_K59](https://www.flickr.com/photos/patrick_k59/)
 
-[High Res](https://flic.kr/p/dUx4r5)
+[High Res](https://flic.kr/p/dUx4r5) [Patrick_K59](https://www.flickr.com/photos/patrick_k59/)
 
 
 Amsterdam Albatross(Diomedea exulans amsterdamensis)
