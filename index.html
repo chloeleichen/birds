@@ -12,17 +12,18 @@
   <link rel="stylesheet" href="build/icon.css">
   <link href='build/styles.css' rel='stylesheet'>
 </head>
-<body class="Bird" id ="body">
+<body class="Bird front" id ="body">
     <!-- header -->
-    <header class="center header" role="banner" >
+    <header class="center header" role="banner" id="header" >
+      <div class="tilt" id ='tilt'>
+        <div class="tilt-back tilt-inner" id="tilt-back-static"></div>
+        <div class="tilt-mover tilt-inner" id="tilt-mover"></div>
+        <div class="tilt-front tilt-inner" id="tilt-front"></div>
+      </div>
       <nav></nav>
-      <h1>Endangered Australian Birds in NSW</h1>
-    <div class="tilt">
-      <div class="tilt-back tilt-inner" id="tilt-1"></div>
-      <div class="tilt-front tilt-inner" id="tilt-2"></div>
-      <div class="tilt-front tilt-inner" id="tilt-3"></div>
-      <div class="tilt-front tilt-inner" id="tilt-4"></div>
-    </div>
+      <h1>Endangered Birds in NSW</h1>
+    
+    <button id="start" disabled="true" > Start Explore</button>
     </header>
     <!-- end of header -->
     <!-- main -->
@@ -34,7 +35,7 @@
     <footer class="container">
     <!-- © 2014 Chloe -->
     </footer>
-    <script src="build/main.js"></script>
     <script src="build/script.js"></script>
+    <script src="build/main.js"></script>
   </body>
 </html>

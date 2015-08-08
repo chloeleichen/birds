@@ -1,8 +1,19 @@
 body{
   background: #212121;
-  header{
+  overflow-x: hidden;
+  // header{
+  //   max-height: 2em;
+  //   @include transition(all, 2s);
+  // }
+  &.front{
+    overflow: hidden;
+    max-height: 100vh;
+    header{
     height: 100vh;
+    overflow: hidden;
+    }
   }
+  
 
   // &.ready{
   //   header{

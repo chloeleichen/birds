@@ -1,6 +1,7 @@
  'use strict';
   var BirdWrapper = require('./BirdWrapper.jsx');
   var BirdInfo = require('./BirdInfo.jsx');
+  var buttonStart = document.getElementById('start');
   var activeEl, transitionEvent, birds, birdImg;
 
   var AllBirdsWrapper = React.createClass({
@@ -47,7 +48,7 @@
         birdImg = this.el.getElementsByTagName("img");
           if(birdImg.length == 19){
             body.classList.add("ready");
-            console.log("ready");
+            buttonStart.disabled = false;
           }
       }
     },

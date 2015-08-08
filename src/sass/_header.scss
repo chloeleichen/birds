@@ -2,6 +2,8 @@ header{
   background-image: url("./../bg-mobile.jpg");
   background-size: cover;
   position: relative;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   h1{
     margin: 0;
     padding: 40vh 0.5em;
@@ -12,6 +14,7 @@ header{
   }
 
   @media screen and (min-width: $sm){
+    background-image: none;
     .tilt{
       display: block;
       position: absolute;
@@ -19,13 +22,33 @@ header{
       left: 0;
       width: 100%;
       height: 100%;
+      z-index: -1;
     }
 
     .tilt-inner{
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       background-image: url("./../bg.jpg");
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
       background-size: cover;
     }
+
+    .tilt-back, .tilt-front{
+        opacity: 0.2;
+        @include transition(opacity, 0.5s);
+        @include transition(transform, 0.5s);
+        @include transform-origin(50%);
+        -webkit-transition-timing-function: cubic-bezier(0.6,0,0.4,1);
+        transition-timing-function: cubic-bezier(0.6,0,0.4,1);
+    }
+
+    .tilt-mover{
+      opacity: 0.6;
+      @include transition(transform, 0.5s);
+    } 
   }
 }
