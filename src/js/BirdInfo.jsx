@@ -19,14 +19,16 @@ var BirdInfo = React.createClass({
           </div>
           <div className='p2 bird-info'>
           <div className="container">
-          <a className ="p2 block btn btn-close icon-cross" onClick = {this.handleClose}></a>
+          <div className="close-btn-wrapper block clearfix">
+          <a className ="p2 inline-block right btn btn-close icon-cross" onClick = {this.handleClose}></a>
+          </div>
           <div className="clearfix">
           <BirdTitle comName={this.props.data.commonName} sciName={this.props.data.scientificName}/>
           <BirdStatus cmStatus={this.props.data.commonwealthStatus} nswStatus ={this.props.data.nswStatus} />
           </div>
           <BirdStats stats={this.props.data.stats} statsFor={this.props.data.statsFor}/>
-          <BirdThreats threats ={this.props.data.threats} />
-          <div className='profile'> <a href={this.props.data.profile}>Profile</a> </div>
+          <BirdThreats threats ={this.props.data.threats}/>
+          <div className='profile center clearfix py4 px0'><a href={this.props.data.profile}>view bird profile on environment.gov.au<span className="icon icon-link-external"></span></a></div>
           </div>
           </div>
           </div>

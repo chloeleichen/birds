@@ -62,9 +62,119 @@ body {
   margin: 0 auto;
 }
 
+.status {
+  margin-bottom: 0.5em;
+}
+.status label {
+  font-size: 0.8em;
+}
+@media screen and (min-width: 40em) {
+  .status {
+    text-align: right;
+    margin-top: 3.5em;
+  }
+}
+.status .critically-endangered {
+  color: #e74c3c;
+  font-size: 1.2em;
+}
+.status .endangered {
+  color: #d35400;
+  font-size: 1.2em;
+}
+.status .vulnerable {
+  color: #e67e22;
+}
+.status .presumed-extinct {
+  color: #d14233;
+}
+
+.stats {
+  text-align: center;
+  margin: 3em auto;
+}
+.stats .number {
+  font-size: 4em;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: color;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 2s;
+  -moz-animation-duration: 5s;
+  -moz-animation-name: color;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 2s;
+  -o-animation-duration: 5s;
+  -o-animation-name: color;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 2s;
+  animation-duration: 5s;
+  animation-name: color;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  color: #ef5350;
+}
+
+@-webkit-keyframes color {
+  from {
+    color: #fff;
+  }
+  to {
+    color: #ef5350;
+  }
+}
+@-moz-keyframes color {
+  from {
+    color: #fff;
+  }
+  to {
+    color: #ef5350;
+  }
+}
+@-ms-keyframes color {
+  from {
+    color: #fff;
+  }
+  to {
+    color: #ef5350;
+  }
+}
+@keyframes color {
+  from {
+    color: #fff;
+  }
+  to {
+    color: #ef5350;
+  }
+}
 .btn-close {
-  text-align: right;
   cursor: pointer;
+}
+.btn-close:hover, .btn-close:focus {
+  color: #ef5350;
+}
+
+.profile a {
+  padding-right: 2em;
+  position: relative;
+}
+.profile span.icon {
+  display: inline-block;
+  padding-left: 0.3em;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 1.5em;
+  height: 1.1em;
+  font-size: 1.3em;
+}
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
 }
 
 .open .bird-card-wrapper, .closing .bird-card-wrapper {
@@ -109,7 +219,8 @@ body {
   -o-transition: all, 1s;
   -webkit-transition: all, 1s;
   transition: all, 1s;
-  background: #1b1b1b;
+  background-color: #1b1b1b;
+  background-image: url("./../birds-dark.png");
   z-index: 100;
 }
 .opening .bird-card-wrapper {
@@ -164,65 +275,16 @@ body {
   -webkit-transform: translate(0, 100%);
   transform: translate(0, 100%);
 }
-.bird-card-wrapper canvas {
-  width: 100% !important;
-  height: auto !important;
+.bird-card-wrapper h1 {
+  margin: 0.5em 0;
 }
 
-.status {
-  margin-bottom: 0.5em;
-}
-.status label {
-  font-size: 0.8em;
-}
-@media screen and (min-width: 40em) {
-  .status {
-    text-align: right;
-    margin-top: 4.5em;
-  }
-}
-.status .critically-endangered {
-  color: #e74c3c;
-  font-size: 1.2em;
-}
-.status .endangered {
-  color: #d35400;
-  font-size: 1.2em;
+.bird-list-wrapper {
+  -webkit-transform: translate3d(0, 0, 0);
+  /* prevents flicker */
+  -webkit-overflow-scrolling: touch;
 }
 
-.stats {
-  text-align: center;
-  margin: 3em auto;
-}
-.stats .number {
-  font-size: 4em;
-  -webkit-animation-name: example;
-  /* Chrome, Safari, Opera */
-  -webkit-animation-duration: 7s;
-  /* Chrome, Safari, Opera */
-  animation-name: example;
-  animation-duration: 7s;
-  color: #ef5350;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes example {
-  from {
-    color: #fff;
-  }
-  to {
-    color: #ef5350;
-  }
-}
-/* Standard syntax */
-@keyframes example {
-  from {
-    color: #fff;
-  }
-  to {
-    color: #ef5350;
-  }
-}
 .bird-wrapper {
   cursor: pointer;
   color: #9d9d9d;
@@ -239,7 +301,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: calc((100vw - 2em)*0.625);
+  height: calc((100vw - 3em)*0.625);
   max-height: 18.125em;
   background-color: #3b3b3b;
 }
@@ -251,12 +313,21 @@ body {
   margin-top: 0.5em;
   text-transform: uppercase;
 }
-.bird-wrapper:hover, .bird-wrapper:focus {
+.bird-wrapper.active {
   color: #ef5350;
 }
-.bird-wrapper:hover img, .bird-wrapper:focus img {
+.bird-wrapper.active img {
   filter: grayscale(0);
   -webkit-filter: grayscale(0);
+}
+@media screen and (min-width: 52em) {
+  .bird-wrapper:hover, .bird-wrapper:focus {
+    color: #ef5350;
+  }
+  .bird-wrapper:hover img, .bird-wrapper:focus img {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+  }
 }
 
 .opening .bird-wrapper, .open .bird-wrapper, .closing .bird-wrapper {

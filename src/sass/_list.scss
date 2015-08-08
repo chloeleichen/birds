@@ -1,3 +1,16 @@
+@mixin active{
+  color: $red;
+  img{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+  }
+}
+
+.bird-list-wrapper{
+    -webkit-transform: translate3d(0, 0, 0);
+    /* prevents flicker */
+    -webkit-overflow-scrolling: touch;
+  }
 //Sizes 
 .bird-wrapper{
   cursor: pointer;
@@ -11,7 +24,7 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: calc((100vw - 2em)*0.625);
+    height: calc((100vw - 3em)*0.625);
     max-height: 18.125em;
     background-color: lighten($dark, 10%);
     img{
@@ -23,14 +36,16 @@
       margin-top: 0.5em;
       text-transform: uppercase;
     }
+    &.active{
+      @include active;
+    }
 
-    &:hover, &:focus{
-      color: $red;
-      img{
-        filter: grayscale(0);
-        -webkit-filter: grayscale(0);
-      }
+    @media screen and (min-width: $md){
+      &:hover, &:focus{
+       @include active;
      }
+    }
+
   }
 
 %fade{

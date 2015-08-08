@@ -1,7 +1,11 @@
  'use strict';
+
+
+
+
   var BirdWrapper = require('./BirdWrapper.jsx');
   var BirdInfo = require('./BirdInfo.jsx');
-  
+
   var AllBirdsWrapper = React.createClass({
     getInitialState: function() {
     return {
@@ -19,6 +23,12 @@
           data: this.state.data.concat(dataSnapshot.val())
         });
       }.bind(this));
+    },
+
+    componentDidMount:function(){
+      var l = setTimeout(function(){
+        body.classList.add("ready");
+      }, 0);
     },
 
     handleClose: function(){
@@ -40,7 +50,7 @@
         self.setState({
           wrapperClass:'open'
         });
-      }, 1200, this);
+      }, 1500, this);
     },
 
     close: function(){
@@ -53,7 +63,28 @@
           activeBirdId: null,
           wrapperClass: "closed"
         });
-      }, 1200, this);
+      }, 1500, this);
+       /* From Modernizr */
+function whichTransitionEvent(){
+    var t;
+    var el = document.querySelector('.active');
+    var transitions = {
+      'transition':'transitionend',
+      'OTransition':'oTransitionEnd',
+      'MozTransition':'transitionend',
+      'WebkitTransition':'webkitTransitionEnd'
+    }
+
+    for(t in transitions){
+        if( el.style[t] !== undefined ){
+            return transitions[t];
+        }
+    }
+}
+      var transitionEvent = whichTransitionEvent();
+        transitionEvent && el.addEventListener(transitionEvent, function() {
+          alert("finished");
+        });
     },
     render: function(){
       //Get Active Bird

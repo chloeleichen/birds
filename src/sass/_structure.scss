@@ -1,4 +1,76 @@
+.status{
+  margin-bottom:0.5em;
+  label{
+    font-size: 0.8em;
+  }
+  @media screen and (min-width: $sm){
+    text-align: right;
+    margin-top: 3.5em;
+
+  }
+  .critically-endangered{
+  color: $critically-endangered;
+  font-size: 1.2em;
+  }
+
+  .endangered{
+    color: $endangered;
+    font-size: 1.2em;
+  }
+
+  .vulnerable{
+    color: $vulnerable;
+
+  }
+  .presumed-extinct{
+    color: $presumed-extinct;
+  }
+}
+
+
+.stats{
+  text-align: center;
+  margin: 3em auto;
+
+  .number{
+    font-size: 4em;
+    @include animation(2s, 5s, color);
+    color: $red;
+
+  }
+}
+
+@include keyframes(color){
+  from {color: #fff;}
+  to {color: $red;}
+}
+
+
 .btn-close{
-  text-align: right;
   cursor: pointer;
+  &:hover, &:focus{
+    color: $red;
+  }
+}
+
+.profile{
+  a{
+    padding-right: 2em;
+    position: relative;
+  }
+  span.icon{
+    display: inline-block;
+    padding-left: 0.3em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1.5em;
+    height: 1.1em;
+    font-size: 1.3em;
+  }
+} 
+
+canvas{
+  width: 100% !important;
+  height: auto !important;
 }

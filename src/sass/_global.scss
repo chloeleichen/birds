@@ -5,22 +5,24 @@
 $sm: 40em;
 $md: 52em;
 $lg: 64em;
-$delay: 1s;
 $dark: #212121;
 $grey: #9d9d9d;
 $darker: #1b1b1b;
 $red: #ef5350;
 $red-lighter: lighten($red, 10%);
 $light: #bdc3c7;
+$presumed-extinct: #d14233;
 $critically-endangered: #e74c3c;
 $endangered:#d35400;
 $vulnerable:#e67e22;
+
 
 $open:'Viga', sans-serif;
 $script:'Marck Script', cursive;
 $normal: "Trebuchet MS", Helvetica, sans-serif;
 
 
+$delay: 1s;
 
 @mixin transition($transition...) {
     -moz-transition:    $transition;
@@ -77,6 +79,45 @@ $normal: "Trebuchet MS", Helvetica, sans-serif;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+// keyframes mixin
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+
+//animation 
+@mixin animation ($delay, $duration, $animation) {
+    -webkit-animation-delay: $delay;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-name: $animation;
+    -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    -moz-animation-delay: $delay;
+    -moz-animation-duration: $duration;
+    -moz-animation-name: $animation;
+    -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    -o-animation-delay: $delay;
+    -o-animation-duration: $duration;
+    -o-animation-name: $animation;
+    -o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation;
+    animation-fill-mode: forwards; /* this prevents the animation from restarting! */
 }
 
 //Img styles

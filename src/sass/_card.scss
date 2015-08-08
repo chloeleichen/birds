@@ -1,9 +1,3 @@
-// .bird-card-wrapper{
-//   @include transition(all, 2s);
-//   position: absolute;
-//   overflow: hidden;
-// }
-
 %fixed{
     position: fixed;
     top: 0;
@@ -38,7 +32,8 @@
    }
    .bird-info{
     @include transition(all, $delay);
-    background: $darker;
+    background-color: $darker;
+    background-image: url("./../birds-dark.png");
     z-index: 100;
    }
   .opening &{
@@ -74,65 +69,12 @@
     
   }
   .closed &{
-
   }
-
-  canvas{
-    width: 100% !important;
-    height: auto !important;
-  }
-
-}
-
-
-.status{
-  margin-bottom:0.5em;
-  label{
-    font-size: 0.8em;
-  }
-  @media screen and (min-width: $sm){
-    text-align: right;
-    margin-top: 4.5em;
-
-  }
-  .critically-endangered{
-  color: $critically-endangered;
-  font-size: 1.2em;
-  }
-
-  .endangered{
-    color: $endangered;
-    font-size: 1.2em;
+  h1{
+    margin: 0.5em 0;
   }
 }
 
-
-.stats{
-  text-align: center;
-  margin: 3em auto;
-
-  .number{
-    font-size: 4em;
-    -webkit-animation-name: example; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 7s; /* Chrome, Safari, Opera */
-    animation-name: example;
-    animation-duration: 7s;
-    color: $red;
-
-  }
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes example {
-    from {color: #fff;}
-    to {color: $red;}
-}
-
-/* Standard syntax */
-@keyframes example {
-    from {color: #fff;}
-    to {color: $red;}
-}
 
 
 
