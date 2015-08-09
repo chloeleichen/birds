@@ -43,14 +43,14 @@
         "stats":"2000",
         "statsFor":"Australia(2000)",
         "attributes": [{
-            "author": " ",
-            "bio": " ",
-            "link": " "
+            "author": "Julian Robinson",
+            "bio": "https://www.flickr.com/photos/ozjulian",
+            "link": "https://flic.kr/p/8EHCTt"
             },
             {
-            "author": "",
-            "bio": " ",
-            "link": " "
+            "author": "Tobias Hayashi",
+            "bio": "https://www.flickr.com/photos/callocephalon/",
+            "link": "https://flic.kr/p/4Hqysg"
                 }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=744"
     },
@@ -63,15 +63,10 @@
         "stats":"1000",
         "statsFor":"Austrlia(2001)",
         "attributes": [{
-            "author": " ",
-            "bio": " ",
-            "link": " "
-            },
-            {
-            "author": "",
-            "bio": " ",
-            "link": " "
-                }],
+            "author": "David Cook CC 2.0",
+            "bio": "https://www.flickr.com/photos/frankzed/",
+            "link": "https://flic.kr/p/ormTq2"
+            }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=1001"
     },
     {   "id":"mg",
@@ -83,14 +78,14 @@
         "stats":"7090",
         "statsFor":"Austrlia(2001)",
         "attributes": [{
-            "author": " ",
-            "bio": " ",
-            "link": " "
+            "author": "Oliver Dodd",
+            "bio": "https://www.flickr.com/photos/oliverdodd/",
+            "link": "https://flic.kr/p/dGZLrv"
             },
             {
-            "author": "",
-            "bio": " ",
-            "link": " "
+            "author": "Harold Moses",
+            "bio": "https://www.flickr.com/photos/mosesharold/",
+            "link": "https://flic.kr/p/kqb1ai"
                 }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=1060"
     },
@@ -103,15 +98,10 @@
         "stats":"50",
         "statsFor":"Austrlia",
         "attributes": [{
-            "author": " ",
-            "bio": " ",
-            "link": " "
-            },
-            {
-            "author": "",
-            "bio": " ",
-            "link": " "
-                }],
+            "author": "Jim Bendon CC 2.0",
+            "bio": "https://www.flickr.com/photos/jim_bendon_1957",
+            "link": "https://flic.kr/p/uByw92"
+            }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=26027"
     },
     {   "id":"pll",
@@ -123,15 +113,10 @@
         "stats":"2500",
         "statsFor":"Austrlia (20090",
         "attributes": [{
-            "author": " ",
-            "bio": " ",
-            "link": " "
-            },
-            {
-            "author": "",
-            "bio": " ",
-            "link": " "
-                }],
+            "author": "Todd Burrows",
+            "bio": "https://www.flickr.com/photos/toddburrows/",
+            "link": "https://flic.kr/p/dN1mWz"
+            }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=26033"
     },
     {   "id":"sm",
@@ -143,14 +128,14 @@
         "stats":"4000",
         "statsFor":"Austrlia(2006)",
         "attributes": [{
-            "author": " ",
-            "bio": " ",
-            "link": " "
+            "author": "Ron Knight CC2.0",
+            "bio": "https://www.flickr.com/photos/sussexbirder/",
+            "link": "https://flic.kr/p/diYjwY"
             },
             {
-            "author": "",
-            "bio": " ",
-            "link": " "
+            "author": "Wild~Life",
+            "bio": "https://www.flickr.com/photos/andrew_alderson/",
+            "link": "https://flic.kr/p/qaiN8e"
                 }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=59459"
     },
@@ -163,15 +148,10 @@
         "stats":"100",
         "statsFor":"Austrlia(2000)",
         "attributes": [{
-            "author": " ",
-            "bio": " ",
-            "link": " "
-            },
-            {
-            "author": "",
-            "bio": " ",
-            "link": " "
-                }],
+            "author": "snowmanradio CC2.0",
+            "bio": "https://commons.wikimedia.org/wiki/User:Snowmanradio",
+            "link": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Cyclopsitta_diophthalma_-Birdworld_Kuranda%2C_Queensland%2C_Australia_-male-8a.jpg"
+            }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=59714"
     },
     {   "id":"pcc",
@@ -183,15 +163,10 @@
         "stats":"10 000",
         "statsFor":"Austrlia (2011)",
         "attributes": [{
-            "author": " ",
-            "bio": " ",
-            "link": " "
-            },
-            {
-            "author": "",
-            "bio": " ",
-            "link": " "
-                }],
+            "author": "Aunty Marsy",
+            "bio": "https://www.flickr.com/photos/auntymarsy/",
+            "link": "https://flic.kr/p/9qfMzH"
+            }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=64447"
     },
     {   "id":"te",
@@ -203,14 +178,14 @@
         "stats":"11 000",
         "statsFor":"Globally(2003)",
         "attributes": [{
-            "author": " ",
-            "bio": " ",
-            "link": " "
+            "author": "Jon Irvine",
+            "bio": "https://www.flickr.com/photos/calidris-photos/",
+            "link": "https://flic.kr/p/8UexwV"
             },
             {
-            "author": "",
-            "bio": " ",
-            "link": " "
+            "author": "Bruce McKinlay",
+            "bio": "https://www.flickr.com/photos/98212195@N00/",
+            "link": "https://flic.kr/p/pB3vg7"
                 }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=64457"
     },
@@ -223,15 +198,10 @@
         "stats":"1600",
         "statsFor":"NSW(2010)",
         "attributes": [{
-            "author": " ",
-            "bio": " ",
-            "link": " "
-            },
-            {
-            "author": "",
-            "bio": " ",
-            "link": " "
-                }],
+            "author": "Ron Knight",
+            "bio": "https://www.flickr.com/photos/sussexbirder",
+            "link": "https://flic.kr/p/diYmzg"
+            }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=67065"
     },
     {   "id":"ra",
@@ -243,14 +213,14 @@
         "stats":"5000",
         "statsFor":"Austrlia(2000)",
         "attributes": [{
-            "author": " ",
-            "bio": " ",
-            "link": " "
+            "author": "Patrick_K59 CC 2.0",
+            "bio": "https://www.flickr.com/photos/patrick_k59",
+            "link": "https://flic.kr/p/dQDDLd"
             },
             {
-            "author": "",
-            "bio": " ",
-            "link": " "
+            "author": "Patrick_K59 CC 2.0",
+            "bio": "https://www.flickr.com/photos/patrick_k59",
+            "link": "https://flic.kr/p/dUx4r5"
                 }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=77037"
     },
@@ -263,14 +233,14 @@
         "stats":"130",
         "statsFor":"the World(2008)",
         "attributes": [{
-            "author": " ",
+            "author": "Vincent Legendre CC3.0",
             "bio": " ",
-            "link": " "
+            "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Albatros_d%27amsterdam_poussin.jpg/500px-Albatros_d%27amsterdam_poussin.jpg"
             },
             {
-            "author": "",
-            "bio": " ",
-            "link": " "
+            "author": "Vincent Legendre CC3.0",
+            "bio": "",
+            "link": "https://en.wikipedia.org/wiki/File:Albatros_d%27amsterdam.jpg"
                 }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=82330"
     },
@@ -283,14 +253,14 @@
         "stats":"20,000",
         "statsFor":"the World(2012)",
         "attributes": [{
-            "author": " ",
-            "bio": " ",
-            "link": " "
+            "author": "Ed Dunens CC2.0",
+            "bio": "https://www.flickr.com/photos/blachswan",
+            "link": "https://flic.kr/p/qavMD1"
             },
             {
-            "author": "",
-            "bio": " ",
-            "link": " "
+            "author": "JJ Harrison",
+            "bio": "jjharrison89@facebook.com",
+            "link": "https://en.wikipedia.org/wiki/File:Diomedea_sanfordi_-_SE_Tasmania.jpg"
                 }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=82331"
     },
@@ -303,14 +273,14 @@
         "stats":"2000",
         "statsFor":"Austrlia(2001)",
         "attributes": [{
-            "author": " ",
-            "bio": " ",
-            "link": " "
+            "author": "Chantal Steyn",
+            "bio": "https://www.flickr.com/photos/chantal_steyn/",
+            "link": "https://flic.kr/p/6aFUqB"
             },
             {
-            "author": "",
-            "bio": " ",
-            "link": " "
+            "author": "JJ Harrison CC3.0",
+            "bio": "jjharrison89@facebook.com",
+            "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Diomedea_exulans_in_flight_-_SE_Tasmania.jpg/440px-Diomedea_exulans_in_flight_-_SE_Tasmania.jpg"
                 }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=82337"
     }

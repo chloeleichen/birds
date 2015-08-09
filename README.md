@@ -18,15 +18,12 @@ Eastern Bristlebird (Dasyornis brachypterus)
 
 [Intro Image](https://flic.kr/p/ckjKfo) by [David Cook](https://flic.kr/p/4UUpTw) CC 2.0 Generic
 
-[High Res]() by [Tim Dolly]()
-
-
-Rufous Scrub-bird(Atrichornis rufescens)
-
-[Intro Image](https://flic.kr/p/eS75to) by [REIN](https://www.flickr.com/photos/reinmage/)
+[High Res](http://tim-dolby.blogspot.com.au) by [Tim Dolly](http://tim-dolby.blogspot.com.au)
 
 
 Swift Parrot (Lathamus discolor) 
+
+[Intro Image](https://flic.kr/p/8EHCTt) by [Julian Robinson](https://www.flickr.com/photos/ozjulian/)
 
 [High Res](https://flic.kr/p/4Hqysg) by [Tobias Hayashi](https://www.flickr.com/photos/callocephalon/)
 
@@ -54,16 +51,11 @@ Gould's Petrel(Pterodroma leucoptera leucoptera)
 [High Res](https://flic.kr/p/dN1mWz) by [Todd Burrows](https://www.flickr.com/photos/toddburrows/)
 
 
-Night Parrot(Pezoporus occidentalis):
-
-[Intro Image](http://www.endangered-animals.com.au/night-parrot.htm) by [Endangered Animals](http://www.endangered-animals.com.au/)
-
-[High Res](https://upload.wikimedia.org/wikipedia/commons/2/26/Pezoporus_occidentalis.jpg)
-
 
 Mallee Emu-wren (Stipiturus mallee)
 
-[Image](https://flic.kr/p/diYjwY) by [Ron Knight](https://www.flickr.com/photos/sussexbirder/)
+[High Res](https://flic.kr/p/diYjwY) by [Ron Knight](https://www.flickr.com/photos/sussexbirder/)
+[Intro Image](https://flic.kr/p/qaiN8e) by [Wild~Life](https://www.flickr.com/photos/andrew_alderson/)
 
 
 
@@ -80,7 +72,7 @@ Black-throated Finch (southern) (Poephila cincta cincta)
 
 Chatham Albatross (Thalassarche eremita)
 
-[Intro Image](https://flic.kr/p/8UexwV) by [Jon Irvine](https://flic.kr/p/8UexwV)
+[Intro Image](https://flic.kr/p/8UexwV) by [Jon Irvine](https://www.flickr.com/photos/calidris-photos/)
 
 [High Res](https://flic.kr/p/pB3vg7) by [Bruce McKinlay](https://www.flickr.com/photos/98212195@N00/)
 
