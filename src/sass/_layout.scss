@@ -1,7 +1,7 @@
 body{
-  background: #212121;
+  background: $dark;
   overflow-x: hidden;
-  background-image: url("./../pattern.png");
+  background-image: url("./../birds-darker.png");
   &.front{
     overflow: hidden;
     height: 100vh;
@@ -26,5 +26,6 @@ body{
 .all-birds-wrapper{
   max-width: 30em;
   margin: 0 auto;
+  padding-bottom: 15em;
 }
 

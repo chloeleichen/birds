@@ -23,6 +23,20 @@ header{
   h1{
     display: none;
   }
+  nav{
+    display: none;
+    position: absolute;
+    right: 2em;
+    top: 2em;
+    .icon{
+      font-size: 2em;
+      text-decoration: none;
+      color: $light;
+      &:hover, &:focus{
+        color: $light;
+      }
+    }
+  }
   @include transition(all, 1s);
   @media screen and (min-width: $sm){
     background-image: url("./../bg.jpg");
@@ -73,7 +87,6 @@ body.front {
         border: 1px solid $light;
       }
     }
-
     h1{
       display: block;
       margin: 0;
@@ -85,6 +98,10 @@ body.front {
 
     @media screen and (min-width: $sm){
       background-image: none;
+      h1, a, .front-loader, nav{
+        z-index: 9999;
+        opacity: 0.9
+      }
       .tilt{
         display: block;
         position: absolute;
@@ -92,7 +109,7 @@ body.front {
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: -1;
+        z-index: 0;
       }
 
       .tilt-inner{
@@ -143,4 +160,9 @@ body.front {
   }
 }
 
+.ready.front header{
+    nav{
+      display: block;
+    }
+}
 

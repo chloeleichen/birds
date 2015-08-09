@@ -7,7 +7,9 @@ var gulp  = require('gulp'),
     sass  = require('gulp-ruby-sass'),
     watch = require('gulp-watch'),
     watchify = require('watchify'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    cssmin = require('gulp-cssmin'),
+    rename = require('gulp-rename');
 
 var path = {
   BUILD: './build',
@@ -48,7 +50,15 @@ gulp.task('js', function() {
 gulp.task('compress', function() {
   return gulp.src('./build/*.js')
     .pipe(uglify())
-    .pipe(gulp.dest('./build/mini'));
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('./build'));
+});
+
+gulp.task('minify', function () {
+    gulp.src('./build/*.css')
+        .pipe(cssmin())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('./build'));
 });
 
 gulp.task('watch', function(){
@@ -57,5 +67,7 @@ gulp.task('watch', function(){
   gulp.watch(path.JS, ['js']);
 
 });
+
+
 
 gulp.task('default', ['watch']);

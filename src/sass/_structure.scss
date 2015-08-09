@@ -88,14 +88,13 @@ canvas{
 ul.attribute{
   a{
     color: $light;
-    display: inline-block;
-    text-decoration: none;
-    border-bottom: 1px solid;
     font-size: 0.8em;
-
     &:hover, &:focus{
       color: darken($light, 7%);
-      border-bottom: 1px solid transparent;
+
+    }
+    span{
+
     }
   }
 }

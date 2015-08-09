@@ -9,7 +9,7 @@
 
     render: function() {
       var listItemClassList = this.props.active + " block bird-wrapper p1 col col-12 mt1 mb1";
-      var src = "./../imgs/thumbnail/" + this.props.data.id + ".jpg";
+      var src = "http://www.chloechen.io/images/birds/thumbnail/" + this.props.data.id + ".jpg";
       return (
         <li onClick={this.handleClick} className={listItemClassList} >
           <figure>

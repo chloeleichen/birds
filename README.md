@@ -1,6 +1,6 @@
-#Endangered Birds Australia
+#Endangered birds in NSW
 
-(Birds can be found in NSW that are listed as endangered in Australia by the Commonwealth.)[http://data.gov.au/dataset/threatened-species-state-lists/resource/ab6c9078-ac64-41e0-9987-3e38da53d277]
+(Endangered birds in NSW)[http://data.gov.au/dataset/threatened-species-state-lists/resource/ab6c9078-ac64-41e0-9987-3e38da53d277]
 
 
 ##Image Attributes(in progress)
@@ -77,12 +77,6 @@ Chatham Albatross (Thalassarche eremita)
 [High Res](https://flic.kr/p/pB3vg7) by [Bruce McKinlay](https://www.flickr.com/photos/98212195@N00/)
 
 
-Grey-headed Albatross (Thalassarche chrysostoma)
-
-[Intro Image](https://en.wikipedia.org/wiki/Grey-headed_albatross#/media/File:Thalassarche_chrysostoma_-_SE_Tasmania.jpg)
-
-[High Res](https://upload.wikimedia.org/wikipedia/commons/4/43/Thalassarche_chrysostoma_-Southern_Ocean%2C_Drakes_Passage_-flying-8_%281%29.jpg)
-
 
 Grey Grasswren (Bulloo) (Amytornis barbatus barbatus)
 
@@ -98,7 +92,7 @@ Australian Painted Snipe (Rostratula australis)
 
 Amsterdam Albatross(Diomedea exulans amsterdamensis)
 
-[Intro Image](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Albatros_d%27amsterdam_poussin.jpg/500px-Albatros_d%27amsterdam_poussin.jpg)
+Vincent Legendre [Intro Image](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Albatros_d%27amsterdam_poussin.jpg/500px-Albatros_d%27amsterdam_poussin.jpg)
 
 [High Res](https://en.wikipedia.org/wiki/Amsterdam_albatross#/media/File:Albatros_d%27amsterdam.jpg)
 

@@ -47,7 +47,7 @@ label {
 body {
   background: #212121;
   overflow-x: hidden;
-  background-image: url("./../pattern.png");
+  background-image: url("./../birds-darker.png");
 }
 body.front {
   overflow: hidden;
@@ -74,6 +74,7 @@ body.front #main {
 .all-birds-wrapper {
   max-width: 30em;
   margin: 0 auto;
+  padding-bottom: 15em;
 }
 
 header #start:focus, header #start:hover, header #start:active {
@@ -106,6 +107,20 @@ header {
 }
 header h1 {
   display: none;
+}
+header nav {
+  display: none;
+  position: absolute;
+  right: 2em;
+  top: 2em;
+}
+header nav .icon {
+  font-size: 2em;
+  text-decoration: none;
+  color: #bdc3c7;
+}
+header nav .icon:hover, header nav .icon:focus {
+  color: #bdc3c7;
 }
 @media screen and (min-width: 40em) {
   header {
@@ -166,6 +181,10 @@ body.front header .tilt {
   body.front header {
     background-image: none;
   }
+  body.front header h1, body.front header a, body.front header .front-loader, body.front header nav {
+    z-index: 9999;
+    opacity: 0.9;
+  }
   body.front header .tilt {
     display: block;
     position: absolute;
@@ -173,7 +192,7 @@ body.front header .tilt {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 0;
   }
   body.front header .tilt-inner {
     position: absolute;
@@ -229,6 +248,10 @@ body.front header .tilt {
 }
 .ready .front-loader {
   display: none;
+}
+
+.ready.front header nav {
+  display: block;
 }
 
 .status {
@@ -356,14 +379,10 @@ canvas {
 
 ul.attribute a {
   color: #bdc3c7;
-  display: inline-block;
-  text-decoration: none;
-  border-bottom: 1px solid;
   font-size: 0.8em;
 }
 ul.attribute a:hover, ul.attribute a:focus {
   color: #aab1b7;
-  border-bottom: 1px solid transparent;
 }
 
 .open .bird-card-wrapper, .closing .bird-card-wrapper {

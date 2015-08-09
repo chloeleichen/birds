@@ -12,7 +12,7 @@ var BirdInfo = React.createClass({
       this.props.onClick(this);
     },
     render: function(){
-      var src = "./../imgs/highres/" + this.props.data.id + ".jpg";
+      var src = "http://www.chloechen.io/images/birds/highres/" + this.props.data.id + ".jpg";
       return(
           <div className="bird-card">
           <div className="bird-hero">

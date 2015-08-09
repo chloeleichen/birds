@@ -16,6 +16,8 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "devDependencies": {
+    "gulp-cssmin": "^0.1.7",
+    "gulp-rename": "^1.2.2",
     "gulp-uglify": "^1.2.0",
     "react-timer-mixin": "^0.13.2",
     "watchify": "^3.3.1"
