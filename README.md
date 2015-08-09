@@ -2,12 +2,13 @@
 
 ###[Check it out here](http://chloechen.io/bird) 
 
-(Endangered birds in NSW)[http://data.gov.au/dataset/threatened-species-state-lists/resource/ab6c9078-ac64-41e0-9987-3e38da53d277]
+##Data source: 
+[Endangered birds in NSW](http://data.gov.au/dataset/threatened-species-state-lists/resource/ab6c9078-ac64-41e0-9987-3e38da53d277)
 
 
 ##Image Attributes(in progress)
 
-### THANKS TO ALL THE GENEROUS PEOPLE WHO ALLOW ME TO USE THEIR PHOTOS IN THIS PROJECT. 
+THANKS TO ALL THE GENEROUS PEOPLE WHO ALLOW ME TO USE THEIR PHOTOS IN THIS PROJECT. 
 
 The following is a complete list of bird images used in this project. The licence of the project does not cover any of the images, please contact the creators  of the image for reuse. 
 
@@ -111,9 +112,3 @@ Tristan Albatross (Diomedea exulans exulans)
 [Intro Image](https://flic.kr/p/6aFUqB) by [Chantal Steyn](https://www.flickr.com/photos/chantal_steyn/)
 
 [High Res](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Diomedea_exulans_in_flight_-_SE_Tasmania.jpg/440px-Diomedea_exulans_in_flight_-_SE_Tasmania.jpg)
-
-## Other source of info 
-[Atrichornis rufescens](http://www.environment.gov.au/biodiversity/threatened/species/pubs/655-conservation-advice.pdf)
-[Population Status and Threats to Albatrosses and Giant
-Petrels Listed as Threatened under the Environment
-Protection and Biodiversity Conservation Act 1999](http://www.antarctica.gov.au/__data/assets/pdf_file/0019/40636/Albatross-Background-Paper-FINAL.pdf)
