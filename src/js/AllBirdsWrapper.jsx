@@ -46,7 +46,8 @@
     componentDidUpdate: function(){
       if(!body.classList.contains("ready")){
         birdImg = this.el.getElementsByTagName("img");
-          if(birdImg.length == 19){
+        //check data loaded
+          if(birdImg.length === 16){
             body.classList.add("ready");
             buttonStart.disabled = false;
           }

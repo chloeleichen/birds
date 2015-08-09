@@ -354,6 +354,18 @@ canvas {
   margin-bottom: 2em;
 }
 
+ul.attribute a {
+  color: #bdc3c7;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  font-size: 0.8em;
+}
+ul.attribute a:hover, ul.attribute a:focus {
+  color: #aab1b7;
+  border-bottom: 1px solid transparent;
+}
+
 .open .bird-card-wrapper, .closing .bird-card-wrapper {
   position: fixed;
   top: 0;

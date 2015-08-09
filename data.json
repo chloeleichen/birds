@@ -8,15 +8,10 @@
         "stats":"50",
         "statsFor":"NSW (2000)",
         "attributes": [{
-            "author": " ",
-            "bio": " ",
-            "link": " "
-            },
-            {
-            "author": "",
-            "bio": " ",
-            "link": " "
-                }],
+            "author": "Planettrekker",
+            "bio": "https://www.flickr.com/photos/planettrekker",
+            "link": "https://flic.kr/p/8LkeCd"
+            }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=449"
     },
     {   "id":"db",
@@ -28,14 +23,14 @@
         "stats":"2000",
         "statsFor":"Australia(1998)",
         "attributes": [{
-            "author": " ",
-            "bio": " ",
-            "link": " "
+            "author": "David Cook(CC 2.0)",
+            "bio": "https://flic.kr/p/4UUpTw",
+            "link": "https://flic.kr/p/ckjKfo"
             },
             {
-            "author": "",
-            "bio": " ",
-            "link": " "
+            "author": "Tim Dolby",
+            "bio": "https://www.blogger.com/profile/05959326240924026673",
+            "link": "http://tim-dolby.blogspot.com.au"
                 }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=533"
     },
