@@ -7,6 +7,16 @@
         "threats": [9, 5, 2, 5, 6, 0, 0, 5],
         "stats":"50",
         "statsFor":"NSW (2000)",
+        "attributes": [{
+            "author": " ",
+            "bio": " ",
+            "link": " "
+            },
+            {
+            "author": "",
+            "bio": " ",
+            "link": " "
+                }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=449"
     },
     {   "id":"db",
@@ -17,17 +27,17 @@
         "threats": [8, 4, 6, 5, 6, 0, 5, 5],
         "stats":"2000",
         "statsFor":"Australia(1998)",
+        "attributes": [{
+            "author": " ",
+            "bio": " ",
+            "link": " "
+            },
+            {
+            "author": "",
+            "bio": " ",
+            "link": " "
+                }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=533"
-    },
-    {   "id":"ar",
-        "commonwealthStatus": "Vulnerable",
-        "nswStatus": "Endangered",
-        "scientificName": "Atrichornis rufescens",
-        "commonName": "Rufous Scrub-bird",
-        "threats": [8, 5, 4, 2, 6, 0, 5, 5],
-        "stats":"5000",
-        "statsFor":"Austrlia(2007)",
-        "A Saving Our Species conservation project is currently being developed for this species": "http://www.environment.nsw.gov.au/threatenedspeciesapp/profile.aspx?id=10076"
     },
     {   "id":"ld",
         "commonwealthStatus": "Endangered",
@@ -37,6 +47,16 @@
         "threats": [9, 3, 5, 5, 4, 0, 6, 5],
         "stats":"2000",
         "statsFor":"Australia(2000)",
+        "attributes": [{
+            "author": " ",
+            "bio": " ",
+            "link": " "
+            },
+            {
+            "author": "",
+            "bio": " ",
+            "link": " "
+                }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=744"
     },
     {   "id":"bp",
@@ -47,6 +67,16 @@
         "threats": [8, 6, 6, 2, 1, 0, 5, 8],
         "stats":"1000",
         "statsFor":"Austrlia(2001)",
+        "attributes": [{
+            "author": " ",
+            "bio": " ",
+            "link": " "
+            },
+            {
+            "author": "",
+            "bio": " ",
+            "link": " "
+                }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=1001"
     },
     {   "id":"mg",
@@ -57,6 +87,16 @@
         "threats": [5, 5, 4, 2, 0, 9, 8, 5],
         "stats":"7090",
         "statsFor":"Austrlia(2001)",
+        "attributes": [{
+            "author": " ",
+            "bio": " ",
+            "link": " "
+            },
+            {
+            "author": "",
+            "bio": " ",
+            "link": " "
+                }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=1060"
     },
     {   "id":"nrr",
@@ -67,6 +107,16 @@
         "threats": [6, 5, 5, 2, 1, 0, 8, 5],
         "stats":"50",
         "statsFor":"Austrlia",
+        "attributes": [{
+            "author": " ",
+            "bio": " ",
+            "link": " "
+            },
+            {
+            "author": "",
+            "bio": " ",
+            "link": " "
+                }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=26027"
     },
     {   "id":"pll",
@@ -77,17 +127,17 @@
         "threats": [2, 5, 4, 2, 4, 2, 7, 5],
         "stats":"2500",
         "statsFor":"Austrlia (20090",
+        "attributes": [{
+            "author": " ",
+            "bio": " ",
+            "link": " "
+            },
+            {
+            "author": "",
+            "bio": " ",
+            "link": " "
+                }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=26033"
-    },
-    {   "id":"po",
-        "commonwealthStatus": "Endangered",
-        "nswStatus": "Presumed Extinct",
-        "scientificName": "Pezoporus occidentalis",
-        "commonName": "Night Parrot",
-        "threats": [8, 2, 8, 2, 8, 0, 8, 5],
-        "stats":"20",
-        "statsFor":"Austrlia",
-        "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=59350"
     },
     {   "id":"sm",
         "commonwealthStatus": "Endangered",
@@ -97,6 +147,16 @@
         "threats": [9, 4, 5, 2, 6, 0, 4, 2],
         "stats":"4000",
         "statsFor":"Austrlia(2006)",
+        "attributes": [{
+            "author": " ",
+            "bio": " ",
+            "link": " "
+            },
+            {
+            "author": "",
+            "bio": " ",
+            "link": " "
+                }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=59459"
     },
     {   "id":"cdc",
@@ -107,6 +167,16 @@
         "threats": [9, 2, 2, 4, 4, 0, 8, 8],
         "stats":"100",
         "statsFor":"Austrlia(2000)",
+        "attributes": [{
+            "author": " ",
+            "bio": " ",
+            "link": " "
+            },
+            {
+            "author": "",
+            "bio": " ",
+            "link": " "
+                }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=59714"
     },
     {   "id":"pcc",
@@ -117,6 +187,16 @@
         "threats": [8, 3, 7, 1, 5, 0, 6, 2],
         "stats":"10 000",
         "statsFor":"Austrlia (2011)",
+        "attributes": [{
+            "author": " ",
+            "bio": " ",
+            "link": " "
+            },
+            {
+            "author": "",
+            "bio": " ",
+            "link": " "
+                }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=64447"
     },
     {   "id":"te",
@@ -127,17 +207,17 @@
         "threats": [2, 5, 8, 1, 1, 8, 8, 2],
         "stats":"11 000",
         "statsFor":"Globally(2003)",
+        "attributes": [{
+            "author": " ",
+            "bio": " ",
+            "link": " "
+            },
+            {
+            "author": "",
+            "bio": " ",
+            "link": " "
+                }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=64457"
-    },
-    {   "id":"tc",
-        "commonwealthStatus": "Endangered",
-        "nswStatus": "Endangered",
-        "scientificName": "Thalassarche chrysostoma",
-        "commonName": "Grey-headed Albatross",
-        "threats": [2, 5, 7, 1, 1, 8, 6, 2],
-        "stats":"300",
-        "statsFor":"Austrlia(2005)",
-        "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=66491"
     },
     {   "id":"abb",
         "commonwealthStatus": "Endangered",
@@ -147,6 +227,16 @@
         "threats": [9, 6, 8, 1, 1, 1, 1, 2],
         "stats":"1600",
         "statsFor":"NSW(2010)",
+        "attributes": [{
+            "author": " ",
+            "bio": " ",
+            "link": " "
+            },
+            {
+            "author": "",
+            "bio": " ",
+            "link": " "
+                }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=67065"
     },
     {   "id":"ra",
@@ -157,6 +247,16 @@
         "threats": [9, 5, 4, 1, 5, 1, 6, 3],
         "stats":"5000",
         "statsFor":"Austrlia(2000)",
+        "attributes": [{
+            "author": " ",
+            "bio": " ",
+            "link": " "
+            },
+            {
+            "author": "",
+            "bio": " ",
+            "link": " "
+                }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=77037"
     },
     {   "id":"dea",
@@ -167,6 +267,16 @@
         "threats": [8, 5, 3, 5, 1, 3, 8, 4],
         "stats":"130",
         "statsFor":"the World(2008)",
+        "attributes": [{
+            "author": " ",
+            "bio": " ",
+            "link": " "
+            },
+            {
+            "author": "",
+            "bio": " ",
+            "link": " "
+                }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=82330"
     },
     {   "id":"des",
@@ -177,6 +287,16 @@
         "threats": [2, 5, 1, 1, 1, 9, 8, 4],
         "stats":"20,000",
         "statsFor":"the World(2012)",
+        "attributes": [{
+            "author": " ",
+            "bio": " ",
+            "link": " "
+            },
+            {
+            "author": "",
+            "bio": " ",
+            "link": " "
+                }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=82331"
     },
     {   "id":"dee",
@@ -187,6 +307,16 @@
         "threats": [2, 6, 6, 1, 1, 9, 6, 2],
         "stats":"2000",
         "statsFor":"Austrlia(2001)",
+        "attributes": [{
+            "author": " ",
+            "bio": " ",
+            "link": " "
+            },
+            {
+            "author": "",
+            "bio": " ",
+            "link": " "
+                }],
         "profile": "http://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=82337"
     }
 ]
