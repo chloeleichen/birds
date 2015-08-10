@@ -49,13 +49,15 @@
     @extend %fixed;
     overflow-x: hidden;
     overflow-y: auto;
-    
+
+
     .bird-hero{
       @include translate(0, 0);
     }
     .bird-info{
       @include translate(0, 0);
-    } 
+      min-height: calc(100vh - 30vw);
+    }
   }
   .closing &{
     overflow: hidden;
@@ -66,7 +68,7 @@
     .bird-info{
       @include translate(0, 100%);
     }
-    
+
   }
   .closed &{
   }

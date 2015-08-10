@@ -72,16 +72,21 @@
     height: 1.1em;
     font-size: 1.3em;
   }
-} 
-
-canvas{
-  width: 100% !important;
-  height: auto !important;
 }
-
 .threats{
+  text-align: center;
+  width: 100%;
   label{
     margin-bottom: 2em;
+  }
+  .chart{
+    margin: 0 auto;
+    width: 100%;
+
+    canvas{
+      max-width: 100%;
+      height: auto !important;
+    }
   }
 }
 
