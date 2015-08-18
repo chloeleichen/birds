@@ -1,16 +1,16 @@
 #Endangered birds in NSW
 
-###[Check it out here](http://chloechen.io/bird) 
+###[Check it out here](http://chloechen.io/bird)
 
-##Data source: 
+##Data source:
 [Endangered birds in NSW](http://data.gov.au/dataset/threatened-species-state-lists/resource/ab6c9078-ac64-41e0-9987-3e38da53d277)
 
 
 ##Image Attributes(in progress)
 
-THANKS TO ALL THE GENEROUS PEOPLE WHO ALLOW ME TO USE THEIR PHOTOS IN THIS PROJECT. 
+THANKS TO ALL THE GENEROUS PEOPLE WHO ALLOW ME TO USE THEIR PHOTOS IN THIS PROJECT.
 
-The following is a complete list of bird images used in this project. The licence of the project does not cover any of the images, please contact the creators  of the image for reuse. 
+The following is a complete list of bird images used in this project. The licence of the project does not cover any of the images, please contact the creators  of the image for reuse.
 
 Black-eared Miner(Manorina melanotis)
 
@@ -24,7 +24,7 @@ Eastern Bristlebird (Dasyornis brachypterus)
 [High Res](http://tim-dolby.blogspot.com.au) by [Tim Dolly](http://tim-dolby.blogspot.com.au)
 
 
-Swift Parrot (Lathamus discolor) 
+Swift Parrot (Lathamus discolor)
 
 [Intro Image](https://flic.kr/p/8EHCTt) by [Julian Robinson](https://www.flickr.com/photos/ozjulian/)
 
@@ -77,7 +77,7 @@ Chatham Albatross (Thalassarche eremita)
 
 [Intro Image](https://flic.kr/p/8UexwV) by [Jon Irvine](https://www.flickr.com/photos/calidris-photos/)
 
-[High Res](https://flic.kr/p/pB3vg7) by [Bruce McKinlay](https://www.flickr.com/photos/98212195@N00/)
+[High Res](https://flic.kr/p/8UeweH) by [Jon Irvine](https://www.flickr.com/photos/calidris-photos/)
 
 
 
